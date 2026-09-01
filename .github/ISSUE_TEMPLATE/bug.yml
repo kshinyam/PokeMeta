@@ -1,0 +1,58 @@
+name: Bug report
+description: Report incorrect behavior or a misleading analysis result.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Select...
+        2. Change...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: team
+    attributes:
+      label: Team or data involved
+      description: Include the six Pokémon, dataset month, or relevant model input.
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Add calculations, replay links, screenshots, or source data.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Team builder
+        - Usage data
+        - Matchup scoring
+        - Replacement search
+        - Interface
+        - Documentation
+        - Other
+    validations:
+      required: true
