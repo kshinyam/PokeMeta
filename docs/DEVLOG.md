@@ -4,6 +4,76 @@ This log records what was built, what was learned, important decisions, and the
 next experiment. Entries focus on engineering reasoning rather than repeating
 the commit history.
 
+## September 1, 2026 — Milestone 2: Reproducible Data Importer
+
+### Goal
+
+Replace hand-copied usage numbers with a validated, reproducible Smogon chaos
+JSON pipeline.
+
+### What I Built
+
+- Added a command-line importer for pinned Smogon month, format, and cutoff
+- Validated upstream metadata and Pokémon records with Zod
+- Normalized the top 50 Pokémon by weighted usage
+- Extracted moves, items, abilities, spreads, Tera types, and teammates
+- Recorded source URL, publication timestamp, battle count, and SHA-256 digest
+- Connected the scoring engine to the July 2026 1825-ladder snapshot
+- Added fixture-based tests for sorting, normalization, and invalid input
+- Updated the interface to display metadata from the dataset itself
+
+### What I Learned
+
+- External data should be validated at the boundary before the application
+  trusts it
+- Reproducibility requires pinning the source period, format, cutoff, and digest
+- A normalized internal model protects the rest of the application from
+  upstream schema changes
+- Raw weighted fields should not be mislabeled as probabilities without proving
+  their statistical meaning
+- Tests can reveal environment coupling, such as an import alias supported by
+  the browser build but not by Node's direct test runner
+
+### Challenges
+
+- The August 2026 archive was not yet available, so the importer pins the latest
+  complete July dataset
+- The full chaos file is several megabytes compressed, so the repository stores
+  a compact generated snapshot and a tiny synthetic test fixture instead
+- Smogon chaos JSON does not include Pokémon typing, so threat types remain a
+  small explicit curated boundary for now
+
+### Engineering Decisions
+
+#### Store provenance with the normalized output
+
+The generated snapshot carries enough metadata to identify and verify its
+source. This makes recommendations auditable and prevents an unlabeled dataset
+from silently changing model behavior.
+
+#### Keep the importer deterministic
+
+Records are sorted by usage and name, numeric values are rounded consistently,
+and offline imports require an explicit timestamp. Re-running the same input
+therefore produces the same output.
+
+#### Do not commit the full upstream archive
+
+The application needs a compact runtime snapshot, while tests need only a small
+fixture that exercises the schema. The original source remains linked and
+integrity-checked by SHA-256.
+
+### Validation
+
+- Importer fixture tests cover valid, malformed, and ambiguous inputs
+- The engine verifies the expected snapshot identity and leading usage value
+- Lint and the complete production regression suite pass
+
+### Next Milestone
+
+Turn the imported weighted fields into common, human-readable sets and use those
+sets in move-level matchup evaluation.
+
 ## September 1, 2026 — Milestone 1: Explainable Baseline
 
 ### Goal

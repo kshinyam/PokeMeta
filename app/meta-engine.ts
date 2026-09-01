@@ -1,3 +1,6 @@
+import smogonDataset from "../data/smogon/gen9ou-1825-2026-07.json" with { type: "json" };
+import type { NormalizedSmogonDataset } from "../lib/smogon-importer.ts";
+
 export type PokemonType =
   | "Normal" | "Fire" | "Water" | "Electric" | "Grass" | "Ice"
   | "Fighting" | "Poison" | "Ground" | "Flying" | "Psychic" | "Bug"
@@ -21,6 +24,10 @@ type Threat = {
   usage: number;
   types: PokemonType[];
 };
+
+const SMOGON_META = smogonDataset as NormalizedSmogonDataset;
+
+export const META_SOURCE = SMOGON_META.source;
 
 export const TYPE_COLORS: Record<PokemonType, string> = {
   Normal: "#a8a77a", Fire: "#ee8130", Water: "#6390f0",
@@ -54,23 +61,31 @@ const TYPE_CHART: Partial<Record<PokemonType, Partial<Record<PokemonType, number
   Fairy: { Fire: 0.5, Fighting: 2, Poison: 0.5, Dragon: 2, Dark: 2, Steel: 0.5 },
 };
 
-export const THREATS: Threat[] = [
-  { name: "Great Tusk", usage: 32.1653, types: ["Ground", "Fighting"] },
-  { name: "Gholdengo", usage: 26.08067, types: ["Steel", "Ghost"] },
-  { name: "Kingambit", usage: 25.14462, types: ["Dark", "Steel"] },
-  { name: "Zamazenta", usage: 21.2709, types: ["Fighting"] },
-  { name: "Dragonite", usage: 19.48575, types: ["Dragon", "Flying"] },
-  { name: "Kyurem", usage: 17.64979, types: ["Dragon", "Ice"] },
-  { name: "Ogerpon-Wellspring", usage: 16.73141, types: ["Grass", "Water"] },
-  { name: "Raging Bolt", usage: 15.97289, types: ["Electric", "Dragon"] },
-  { name: "Iron Valiant", usage: 15.59213, types: ["Fairy", "Fighting"] },
-  { name: "Hatterene", usage: 14.74568, types: ["Psychic", "Fairy"] },
-  { name: "Slowking-Galar", usage: 14.16261, types: ["Poison", "Psychic"] },
-  { name: "Ting-Lu", usage: 13.05937, types: ["Dark", "Ground"] },
-  { name: "Gliscor", usage: 12.93407, types: ["Ground", "Flying"] },
-  { name: "Iron Treads", usage: 12.88232, types: ["Ground", "Steel"] },
-  { name: "Cinderace", usage: 12.76128, types: ["Fire"] },
-];
+const THREAT_TYPES: Record<string, PokemonType[]> = {
+  "Great Tusk": ["Ground", "Fighting"],
+  Gholdengo: ["Steel", "Ghost"],
+  Zamazenta: ["Fighting"],
+  Kingambit: ["Dark", "Steel"],
+  Dragonite: ["Dragon", "Flying"],
+  Kyurem: ["Dragon", "Ice"],
+  Gliscor: ["Ground", "Flying"],
+  "Ogerpon-Wellspring": ["Grass", "Water"],
+  Glimmora: ["Rock", "Poison"],
+  "Ting-Lu": ["Dark", "Ground"],
+  Corviknight: ["Flying", "Steel"],
+  "Slowking-Galar": ["Poison", "Psychic"],
+  "Samurott-Hisui": ["Water", "Dark"],
+  "Raging Bolt": ["Electric", "Dragon"],
+  Dragapult: ["Dragon", "Ghost"],
+};
+
+export const THREATS: Threat[] = SMOGON_META.pokemon.slice(0, 15).map((entry) => {
+  const types = THREAT_TYPES[entry.name];
+  if (!types) {
+    throw new Error(`Missing curated type data for imported threat: ${entry.name}`);
+  }
+  return { name: entry.name, usage: entry.usage, types };
+});
 
 export const POKEMON: Pokemon[] = [
   { name: "Great Tusk", types: ["Ground", "Fighting"], roles: ["Hazards", "Removal", "Physical", "Wall"], hardChecks: ["Kingambit", "Iron Treads"], softChecks: ["Gholdengo", "Cinderace", "Ting-Lu"], note: "Compresses hazards, removal, and physical pressure into one slot." },

@@ -1,0 +1,29 @@
+{
+  "info": {
+    "metagame": "gen9ou",
+    "cutoff": 1825,
+    "number of battles": 1200
+  },
+  "data": {
+    "Lower Usage": {
+      "Raw count": 400,
+      "usage": 0.2,
+      "Abilities": { "abilityb": 6 },
+      "Items": { "itemb": 6 },
+      "Moves": { "moveb": 6 },
+      "Spreads": { "Jolly:0/252/4/0/0/252": 6 },
+      "Teammates": { "Higher Usage": 4 },
+      "Tera Types": { "water": 6 }
+    },
+    "Higher Usage": {
+      "Raw count": 900,
+      "usage": 0.45,
+      "Abilities": { "abilitya": 10, "abilityb": 2 },
+      "Items": { "itema": 8, "itemb": 4 },
+      "Moves": { "movea": 12, "moveb": 7, "movezero": 0 },
+      "Spreads": { "Timid:0/0/0/252/4/252": 9 },
+      "Teammates": { "Lower Usage": 5 },
+      "Tera Types": { "fairy": 11 }
+    }
+  }
+}

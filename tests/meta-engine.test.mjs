@@ -4,6 +4,7 @@ import test from "node:test";
 import {
   analyze,
   DEFAULT_TEAM,
+  META_SOURCE,
   POKEMON,
   REQUIRED_ROLES,
   THREATS,
@@ -16,6 +17,17 @@ test("the seed dataset has unique candidates and descending usage", () => {
   for (let index = 1; index < THREATS.length; index += 1) {
     assert.ok(THREATS[index - 1].usage >= THREATS[index].usage);
   }
+});
+
+test("the threat model identifies its imported Smogon snapshot", () => {
+  assert.equal(META_SOURCE.provider, "Smogon");
+  assert.equal(META_SOURCE.period, "2026-07");
+  assert.equal(META_SOURCE.format, "gen9ou");
+  assert.equal(META_SOURCE.cutoff, 1825);
+  assert.equal(META_SOURCE.battles, 654262);
+  assert.match(META_SOURCE.sha256, /^[0-9a-f]{64}$/);
+  assert.equal(THREATS[0].name, "Great Tusk");
+  assert.equal(THREATS[0].usage, 31.08945);
 });
 
 test("an empty team produces a zero score", () => {

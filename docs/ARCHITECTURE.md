@@ -10,27 +10,34 @@ prioritizes explainability, deterministic testing, and replaceable components.
 
 ~~~mermaid
 flowchart TD
-    A["July 2026 usage snapshot"] --> B["Threat model"]
-    C["Curated candidate data"] --> D["Matchup evaluator"]
-    B --> D
-    E["User-selected team"] --> D
-    D --> F["Meta coverage"]
-    E --> G["Role analysis"]
-    E --> H["Type resilience"]
-    F --> I["Weighted score"]
-    G --> I
-    H --> I
-    I --> J["One-slot search"]
-    J --> K["Explainable recommendation"]
+    A["Smogon chaos archive"] --> B["Schema validator"]
+    B --> C["Normalized snapshot"]
+    C --> D["Threat model"]
+    E["Curated candidate data"] --> F["Matchup evaluator"]
+    D --> F
+    G["User-selected team"] --> F
+    F --> H["Weighted score"]
+    G --> H
+    H --> I["One-slot search"]
+    I --> J["Explainable recommendation"]
 ~~~
 
 ## Component Responsibilities
 
 ### Metagame data
 
-Stores weighted usage for the threats being evaluated. The current snapshot is
-static and intentionally small. A future importer will generate this structure
-from Smogon chaos JSON.
+The importer downloads or reads a pinned Smogon chaos payload and validates the
+upstream boundary with Zod. It then produces a compact, versioned JSON snapshot
+containing:
+
+- source period, format, cutoff, battle count, URL, timestamp, and SHA-256
+- usage and raw count for the top 50 Pokémon
+- the five highest-weighted moves, items, abilities, spreads, Tera types, and
+  teammates for each Pokémon
+
+The importer preserves machine identifiers and weighted values rather than
+guessing display names or probabilities. The scoring engine currently consumes
+only the top-15 usage values; common-set modeling is the next stage.
 
 ### Candidate knowledge
 
@@ -102,6 +109,9 @@ browser. Current tests verify:
 
 - Candidate names are unique
 - Threat usage is ordered
+- Imported snapshot identity and digest are present
+- Chaos input is sorted and normalized deterministically
+- Malformed upstream payloads fail at the importer boundary
 - Empty teams return a zero score
 - Complete teams produce answers for every tracked threat
 - Incomplete teams receive a score penalty
@@ -113,12 +123,11 @@ behavior.
 
 ~~~mermaid
 flowchart LR
-    A["Static snapshot"] --> B["Chaos JSON importer"]
-    B --> C["Set-level matchup model"]
-    C --> D["Damage calculations"]
-    D --> E["Archetype clustering"]
-    E --> F["Learned matchup predictor"]
-    F --> G["Evolutionary team search"]
+    A["Chaos JSON importer"] --> B["Set-level matchup model"]
+    B --> C["Damage calculations"]
+    C --> D["Archetype clustering"]
+    D --> E["Learned matchup predictor"]
+    E --> F["Evolutionary team search"]
 ~~~
 
 Each stage should be compared with the previous deterministic baseline. A more
@@ -127,6 +136,7 @@ complex model is only useful when it produces a measurable improvement.
 ## Trust Boundaries
 
 - Usage data describes popularity, not automatic competitive strength
+- Weighted chaos fields are not automatically probabilities
 - Curated checks are hypotheses and must be validated
 - Type matchups do not capture moves, items, abilities, or player decisions
 - A team score is not a battle win probability

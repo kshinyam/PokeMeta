@@ -1,0 +1,6185 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "provider": "Smogon",
+    "period": "2026-07",
+    "format": "gen9ou",
+    "cutoff": 1825,
+    "battles": 654262,
+    "url": "https://www.smogon.com/stats/2026-07/chaos/gen9ou-1825.json.gz",
+    "retrievedAt": "2026-08-01T13:17:35.000Z",
+    "sha256": "53016eb56438c541b8de43646de48b78e26b338182c8b55a7317e9fe065ca1d8"
+  },
+  "pokemon": [
+    {
+      "name": "Great Tusk",
+      "usage": 31.08945,
+      "rawCount": 389490,
+      "abilities": [
+        {
+          "id": "protosynthesis",
+          "weight": 3744.245279
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 980.755837
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 813.805405
+        },
+        {
+          "id": "boosterenergy",
+          "weight": 762.630824
+        },
+        {
+          "id": "choicescarf",
+          "weight": 486.291054
+        },
+        {
+          "id": "leftovers",
+          "weight": 325.384278
+        }
+      ],
+      "moves": [
+        {
+          "id": "headlongrush",
+          "weight": 3499.864175
+        },
+        {
+          "id": "rapidspin",
+          "weight": 3343.428982
+        },
+        {
+          "id": "icespinner",
+          "weight": 3300.277291
+        },
+        {
+          "id": "stealthrock",
+          "weight": 1553.035255
+        },
+        {
+          "id": "closecombat",
+          "weight": 1470.810116
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Jolly:0/252/4/0/0/252",
+          "weight": 958.904798
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 603.689803
+        },
+        {
+          "id": "Jolly:4/252/0/0/0/252",
+          "weight": 301.444933
+        },
+        {
+          "id": "Jolly:252/4/0/0/0/252",
+          "weight": 273.077755
+        },
+        {
+          "id": "Jolly:248/4/4/0/0/252",
+          "weight": 190.123528
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gholdengo",
+          "weight": 1122.737967
+        },
+        {
+          "id": "Kingambit",
+          "weight": 1058.10155
+        },
+        {
+          "id": "Kyurem",
+          "weight": 1045.259569
+        },
+        {
+          "id": "Slowking-Galar",
+          "weight": 943.641469
+        },
+        {
+          "id": "Dragonite",
+          "weight": 821.619586
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "steel",
+          "weight": 1102.613192
+        },
+        {
+          "id": "fighting",
+          "weight": 633.87334
+        },
+        {
+          "id": "ghost",
+          "weight": 405.888255
+        },
+        {
+          "id": "fire",
+          "weight": 353.960738
+        },
+        {
+          "id": "poison",
+          "weight": 347.191381
+        }
+      ]
+    },
+    {
+      "name": "Gholdengo",
+      "usage": 28.29154,
+      "rawCount": 290153,
+      "abilities": [
+        {
+          "id": "goodasgold",
+          "weight": 3404.681739
+        }
+      ],
+      "items": [
+        {
+          "id": "choicescarf",
+          "weight": 1275.237322
+        },
+        {
+          "id": "airballoon",
+          "weight": 781.839162
+        },
+        {
+          "id": "grassyseed",
+          "weight": 414.259022
+        },
+        {
+          "id": "shucaberry",
+          "weight": 207.766762
+        },
+        {
+          "id": "choicespecs",
+          "weight": 190.13136
+        }
+      ],
+      "moves": [
+        {
+          "id": "shadowball",
+          "weight": 3020.478624
+        },
+        {
+          "id": "makeitrain",
+          "weight": 2921.570927
+        },
+        {
+          "id": "recover",
+          "weight": 2329.222838
+        },
+        {
+          "id": "nastyplot",
+          "weight": 1989.824667
+        },
+        {
+          "id": "trick",
+          "weight": 1460.711739
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 970.89989
+        },
+        {
+          "id": "Calm:248/0/8/0/252/0",
+          "weight": 322.038631
+        },
+        {
+          "id": "Timid:4/0/0/252/0/252",
+          "weight": 308.363157
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 237.864014
+        },
+        {
+          "id": "Modest:0/0/0/252/4/252",
+          "weight": 193.78281
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Dragonite",
+          "weight": 1467.420983
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 1253.235897
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 1122.737967
+        },
+        {
+          "id": "Glimmora",
+          "weight": 1045.704824
+        },
+        {
+          "id": "Ting-Lu",
+          "weight": 907.764417
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "fairy",
+          "weight": 1073.278724
+        },
+        {
+          "id": "steel",
+          "weight": 720.426316
+        },
+        {
+          "id": "ghost",
+          "weight": 577.12873
+        },
+        {
+          "id": "water",
+          "weight": 508.687762
+        },
+        {
+          "id": "fighting",
+          "weight": 263.551936
+        }
+      ]
+    },
+    {
+      "name": "Zamazenta",
+      "usage": 26.74307,
+      "rawCount": 169888,
+      "abilities": [
+        {
+          "id": "dauntlessshield",
+          "weight": 3213.181576
+        }
+      ],
+      "items": [
+        {
+          "id": "leftovers",
+          "weight": 1353.92538
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 576.969961
+        },
+        {
+          "id": "lightclay",
+          "weight": 561.163329
+        },
+        {
+          "id": "lifeorb",
+          "weight": 341.214637
+        },
+        {
+          "id": "choiceband",
+          "weight": 105.967111
+        }
+      ],
+      "moves": [
+        {
+          "id": "crunch",
+          "weight": 2547.506168
+        },
+        {
+          "id": "bodypress",
+          "weight": 1824.252816
+        },
+        {
+          "id": "heavyslam",
+          "weight": 1565.002702
+        },
+        {
+          "id": "irondefense",
+          "weight": 1452.229262
+        },
+        {
+          "id": "closecombat",
+          "weight": 1388.10362
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 667.410037
+        },
+        {
+          "id": "Jolly:104/0/248/0/0/156",
+          "weight": 376.208829
+        },
+        {
+          "id": "Adamant:0/252/0/0/4/252",
+          "weight": 273.143783
+        },
+        {
+          "id": "Jolly:252/0/88/0/0/168",
+          "weight": 160.26588
+        },
+        {
+          "id": "Impish:20/0/252/0/0/236",
+          "weight": 146.673558
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gholdengo",
+          "weight": 1253.235897
+        },
+        {
+          "id": "Glimmora",
+          "weight": 795.292766
+        },
+        {
+          "id": "Dragonite",
+          "weight": 791.290685
+        },
+        {
+          "id": "Iron Treads",
+          "weight": 736.391636
+        },
+        {
+          "id": "Gliscor",
+          "weight": 689.470904
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "steel",
+          "weight": 1253.686097
+        },
+        {
+          "id": "fire",
+          "weight": 941.789304
+        },
+        {
+          "id": "dark",
+          "weight": 517.320754
+        },
+        {
+          "id": "electric",
+          "weight": 178.899974
+        },
+        {
+          "id": "fighting",
+          "weight": 90.63405
+        }
+      ]
+    },
+    {
+      "name": "Kingambit",
+      "usage": 23.42864,
+      "rawCount": 281505,
+      "abilities": [
+        {
+          "id": "supremeoverlord",
+          "weight": 2749.009533
+        },
+        {
+          "id": "defiant",
+          "weight": 67.072312
+        },
+        {
+          "id": "pressure",
+          "weight": 3.709734
+        }
+      ],
+      "items": [
+        {
+          "id": "leftovers",
+          "weight": 1675.226885
+        },
+        {
+          "id": "airballoon",
+          "weight": 388.0996
+        },
+        {
+          "id": "blackglasses",
+          "weight": 292.88629
+        },
+        {
+          "id": "lumberry",
+          "weight": 261.007682
+        },
+        {
+          "id": "shucaberry",
+          "weight": 34.651022
+        }
+      ],
+      "moves": [
+        {
+          "id": "suckerpunch",
+          "weight": 2815.276709
+        },
+        {
+          "id": "swordsdance",
+          "weight": 2803.064773
+        },
+        {
+          "id": "ironhead",
+          "weight": 2491.013666
+        },
+        {
+          "id": "kowtowcleave",
+          "weight": 1620.87995
+        },
+        {
+          "id": "lowkick",
+          "weight": 1527.918404
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Adamant:248/252/8/0/0/0",
+          "weight": 343.551865
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 315.585951
+        },
+        {
+          "id": "Adamant:0/252/4/0/0/252",
+          "weight": 230.201884
+        },
+        {
+          "id": "Jolly:0/252/4/0/0/252",
+          "weight": 228.722116
+        },
+        {
+          "id": "Adamant:216/252/0/0/0/40",
+          "weight": 187.243651
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 1058.10155
+        },
+        {
+          "id": "Kyurem",
+          "weight": 932.491195
+        },
+        {
+          "id": "Glimmora",
+          "weight": 675.131653
+        },
+        {
+          "id": "Ogerpon-Wellspring",
+          "weight": 674.037351
+        },
+        {
+          "id": "Landorus-Therian",
+          "weight": 665.167766
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 850.429091
+        },
+        {
+          "id": "fighting",
+          "weight": 524.730412
+        },
+        {
+          "id": "fire",
+          "weight": 393.718551
+        },
+        {
+          "id": "dark",
+          "weight": 353.240753
+        },
+        {
+          "id": "bug",
+          "weight": 304.673967
+        }
+      ]
+    },
+    {
+      "name": "Dragonite",
+      "usage": 19.15017,
+      "rawCount": 202445,
+      "abilities": [
+        {
+          "id": "multiscale",
+          "weight": 2305.302825
+        },
+        {
+          "id": "innerfocus",
+          "weight": 1.331156
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 1330.475758
+        },
+        {
+          "id": "lifeorb",
+          "weight": 353.44168
+        },
+        {
+          "id": "loadeddice",
+          "weight": 291.954273
+        },
+        {
+          "id": "choiceband",
+          "weight": 152.374652
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 43.259139
+        }
+      ],
+      "moves": [
+        {
+          "id": "earthquake",
+          "weight": 1556.913288
+        },
+        {
+          "id": "extremespeed",
+          "weight": 1490.395616
+        },
+        {
+          "id": "dragondance",
+          "weight": 1412.219679
+        },
+        {
+          "id": "roost",
+          "weight": 1191.43952
+        },
+        {
+          "id": "dragontail",
+          "weight": 657.353261
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Adamant:0/252/0/0/4/252",
+          "weight": 468.844827
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 239.737354
+        },
+        {
+          "id": "Adamant:0/252/4/0/0/252",
+          "weight": 216.26613
+        },
+        {
+          "id": "Adamant:248/240/0/0/0/20",
+          "weight": 179.8866
+        },
+        {
+          "id": "Adamant:248/172/68/0/0/20",
+          "weight": 169.917369
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gholdengo",
+          "weight": 1467.420983
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 821.619586
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 791.290685
+        },
+        {
+          "id": "Ting-Lu",
+          "weight": 695.545824
+        },
+        {
+          "id": "Iron Valiant",
+          "weight": 576.105111
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "normal",
+          "weight": 1291.291992
+        },
+        {
+          "id": "ground",
+          "weight": 329.453658
+        },
+        {
+          "id": "fire",
+          "weight": 312.335761
+        },
+        {
+          "id": "steel",
+          "weight": 226.787702
+        },
+        {
+          "id": "poison",
+          "weight": 40.31238
+        }
+      ]
+    },
+    {
+      "name": "Kyurem",
+      "usage": 18.75567,
+      "rawCount": 146471,
+      "abilities": [
+        {
+          "id": "pressure",
+          "weight": 2254.791624
+        }
+      ],
+      "items": [
+        {
+          "id": "assaultvest",
+          "weight": 709.45866
+        },
+        {
+          "id": "loadeddice",
+          "weight": 422.327409
+        },
+        {
+          "id": "choicespecs",
+          "weight": 301.780622
+        },
+        {
+          "id": "leftovers",
+          "weight": 287.856563
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 225.025413
+        }
+      ],
+      "moves": [
+        {
+          "id": "earthpower",
+          "weight": 2159.462446
+        },
+        {
+          "id": "freezedry",
+          "weight": 1924.942316
+        },
+        {
+          "id": "icebeam",
+          "weight": 1259.865241
+        },
+        {
+          "id": "scaleshot",
+          "weight": 588.13898
+        },
+        {
+          "id": "dracometeor",
+          "weight": 569.747897
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 484.280991
+        },
+        {
+          "id": "Naive:0/136/0/120/0/252",
+          "weight": 189.230912
+        },
+        {
+          "id": "Modest:0/0/0/252/4/252",
+          "weight": 139.634848
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 135.658695
+        },
+        {
+          "id": "Naive:0/56/0/200/0/252",
+          "weight": 124.934457
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 1045.259569
+        },
+        {
+          "id": "Kingambit",
+          "weight": 932.491195
+        },
+        {
+          "id": "Slowking-Galar",
+          "weight": 660.621475
+        },
+        {
+          "id": "Landorus-Therian",
+          "weight": 625.166597
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 614.209374
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ground",
+          "weight": 948.825701
+        },
+        {
+          "id": "ice",
+          "weight": 632.560952
+        },
+        {
+          "id": "fairy",
+          "weight": 251.619681
+        },
+        {
+          "id": "poison",
+          "weight": 222.955696
+        },
+        {
+          "id": "ghost",
+          "weight": 85.534927
+        }
+      ]
+    },
+    {
+      "name": "Gliscor",
+      "usage": 18.58246,
+      "rawCount": 178064,
+      "abilities": [
+        {
+          "id": "poisonheal",
+          "weight": 2267.967244
+        },
+        {
+          "id": "hypercutter",
+          "weight": 0.10937
+        }
+      ],
+      "items": [
+        {
+          "id": "toxicorb",
+          "weight": 2268.012249
+        },
+        {
+          "id": "redcard",
+          "weight": 0.019327
+        },
+        {
+          "id": "focussash",
+          "weight": 0.008974
+        },
+        {
+          "id": "choiceband",
+          "weight": 0.008383
+        },
+        {
+          "id": "leftovers",
+          "weight": 0.007193
+        }
+      ],
+      "moves": [
+        {
+          "id": "protect",
+          "weight": 2202.115045
+        },
+        {
+          "id": "knockoff",
+          "weight": 1542.09849
+        },
+        {
+          "id": "swordsdance",
+          "weight": 1137.361757
+        },
+        {
+          "id": "facade",
+          "weight": 1096.052876
+        },
+        {
+          "id": "earthquake",
+          "weight": 1018.576225
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Jolly:244/0/24/0/224/16",
+          "weight": 335.7702
+        },
+        {
+          "id": "Careful:244/0/36/0/228/0",
+          "weight": 299.902542
+        },
+        {
+          "id": "Jolly:244/0/12/0/0/252",
+          "weight": 279.405161
+        },
+        {
+          "id": "Jolly:244/0/36/0/148/80",
+          "weight": 170.675438
+        },
+        {
+          "id": "Careful:252/0/40/0/216/0",
+          "weight": 100.341632
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Clodsire",
+          "weight": 808.792411
+        },
+        {
+          "id": "Dondozo",
+          "weight": 798.043535
+        },
+        {
+          "id": "Corviknight",
+          "weight": 780.746599
+        },
+        {
+          "id": "Blissey",
+          "weight": 761.549515
+        },
+        {
+          "id": "Toxapex",
+          "weight": 703.655509
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "normal",
+          "weight": 1054.381405
+        },
+        {
+          "id": "water",
+          "weight": 553.243064
+        },
+        {
+          "id": "dark",
+          "weight": 303.346068
+        },
+        {
+          "id": "fairy",
+          "weight": 232.864875
+        },
+        {
+          "id": "dragon",
+          "weight": 65.477149
+        }
+      ]
+    },
+    {
+      "name": "Ogerpon-Wellspring",
+      "usage": 17.44657,
+      "rawCount": 189138,
+      "abilities": [
+        {
+          "id": "waterabsorb",
+          "weight": 2098.352569
+        }
+      ],
+      "items": [
+        {
+          "id": "wellspringmask",
+          "weight": 2098.352569
+        }
+      ],
+      "moves": [
+        {
+          "id": "ivycudgel",
+          "weight": 2098.229415
+        },
+        {
+          "id": "swordsdance",
+          "weight": 933.043378
+        },
+        {
+          "id": "powerwhip",
+          "weight": 819.827624
+        },
+        {
+          "id": "playrough",
+          "weight": 815.275565
+        },
+        {
+          "id": "knockoff",
+          "weight": 737.267673
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 782.499629
+        },
+        {
+          "id": "Adamant:0/252/0/0/4/252",
+          "weight": 357.084663
+        },
+        {
+          "id": "Jolly:0/244/12/0/0/252",
+          "weight": 227.553568
+        },
+        {
+          "id": "Adamant:0/244/12/0/0/252",
+          "weight": 190.992561
+        },
+        {
+          "id": "Jolly:0/252/4/0/0/252",
+          "weight": 129.821422
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Kingambit",
+          "weight": 674.037351
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 653.212853
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 554.082261
+        },
+        {
+          "id": "Raging Bolt",
+          "weight": 547.306387
+        },
+        {
+          "id": "Glimmora",
+          "weight": 500.229393
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "water",
+          "weight": 2098.352569
+        }
+      ]
+    },
+    {
+      "name": "Glimmora",
+      "usage": 16.75546,
+      "rawCount": 127411,
+      "abilities": [
+        {
+          "id": "toxicdebris",
+          "weight": 2011.611262
+        },
+        {
+          "id": "corrosion",
+          "weight": 3.684402
+        }
+      ],
+      "items": [
+        {
+          "id": "redcard",
+          "weight": 1321.37464
+        },
+        {
+          "id": "choicescarf",
+          "weight": 294.732298
+        },
+        {
+          "id": "powerherb",
+          "weight": 257.945027
+        },
+        {
+          "id": "focussash",
+          "weight": 96.659535
+        },
+        {
+          "id": "passhoberry",
+          "weight": 16.414241
+        }
+      ],
+      "moves": [
+        {
+          "id": "earthpower",
+          "weight": 1985.446773
+        },
+        {
+          "id": "mortalspin",
+          "weight": 1906.947739
+        },
+        {
+          "id": "stealthrock",
+          "weight": 1593.797467
+        },
+        {
+          "id": "spikes",
+          "weight": 860.9858
+        },
+        {
+          "id": "powergem",
+          "weight": 845.186821
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Calm:248/0/132/0/128/0",
+          "weight": 514.264392
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 351.826869
+        },
+        {
+          "id": "Bold:248/0/252/0/0/8",
+          "weight": 259.0044
+        },
+        {
+          "id": "Bold:248/0/252/0/8/0",
+          "weight": 209.527076
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 157.009219
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gholdengo",
+          "weight": 1045.704824
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 795.292766
+        },
+        {
+          "id": "Kingambit",
+          "weight": 675.131653
+        },
+        {
+          "id": "Dragonite",
+          "weight": 545.169806
+        },
+        {
+          "id": "Iron Valiant",
+          "weight": 505.71896
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 1579.714075
+        },
+        {
+          "id": "fairy",
+          "weight": 242.854406
+        },
+        {
+          "id": "ground",
+          "weight": 125.978076
+        },
+        {
+          "id": "grass",
+          "weight": 49.616951
+        },
+        {
+          "id": "flying",
+          "weight": 9.812659
+        }
+      ]
+    },
+    {
+      "name": "Ting-Lu",
+      "usage": 16.48994,
+      "rawCount": 118981,
+      "abilities": [
+        {
+          "id": "vesselofruin",
+          "weight": 1985.699712
+        }
+      ],
+      "items": [
+        {
+          "id": "leftovers",
+          "weight": 1264.799371
+        },
+        {
+          "id": "redcard",
+          "weight": 256.058134
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 174.390727
+        },
+        {
+          "id": "custapberry",
+          "weight": 131.638195
+        },
+        {
+          "id": "weaknesspolicy",
+          "weight": 100.095317
+        }
+      ],
+      "moves": [
+        {
+          "id": "ruination",
+          "weight": 1693.103407
+        },
+        {
+          "id": "earthquake",
+          "weight": 1643.85826
+        },
+        {
+          "id": "whirlwind",
+          "weight": 1292.314895
+        },
+        {
+          "id": "stealthrock",
+          "weight": 1289.234847
+        },
+        {
+          "id": "spikes",
+          "weight": 947.887762
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Careful:252/0/4/0/252/0",
+          "weight": 375.299299
+        },
+        {
+          "id": "Careful:248/0/8/0/252/0",
+          "weight": 291.116572
+        },
+        {
+          "id": "Impish:248/0/8/0/252/0",
+          "weight": 280.101367
+        },
+        {
+          "id": "Impish:240/0/16/0/252/0",
+          "weight": 144.445478
+        },
+        {
+          "id": "Careful:252/0/0/0/252/4",
+          "weight": 141.67005
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gholdengo",
+          "weight": 907.764417
+        },
+        {
+          "id": "Ogerpon",
+          "weight": 700.951675
+        },
+        {
+          "id": "Dragonite",
+          "weight": 695.545824
+        },
+        {
+          "id": "Corviknight",
+          "weight": 592.606982
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 569.018151
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 892.251071
+        },
+        {
+          "id": "water",
+          "weight": 681.278451
+        },
+        {
+          "id": "poison",
+          "weight": 146.299105
+        },
+        {
+          "id": "fairy",
+          "weight": 99.820262
+        },
+        {
+          "id": "steel",
+          "weight": 90.888706
+        }
+      ]
+    },
+    {
+      "name": "Corviknight",
+      "usage": 15.54939,
+      "rawCount": 200177,
+      "abilities": [
+        {
+          "id": "pressure",
+          "weight": 1888.695088
+        },
+        {
+          "id": "mirrorarmor",
+          "weight": 13.164973
+        },
+        {
+          "id": "unnerve",
+          "weight": 0.104859
+        }
+      ],
+      "items": [
+        {
+          "id": "rockyhelmet",
+          "weight": 1262.362176
+        },
+        {
+          "id": "leftovers",
+          "weight": 549.775559
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 37.938715
+        },
+        {
+          "id": "ejectbutton",
+          "weight": 24.757054
+        },
+        {
+          "id": "covertcloak",
+          "weight": 18.445962
+        }
+      ],
+      "moves": [
+        {
+          "id": "roost",
+          "weight": 1900.42175
+        },
+        {
+          "id": "defog",
+          "weight": 1331.850561
+        },
+        {
+          "id": "bravebird",
+          "weight": 1127.807003
+        },
+        {
+          "id": "irondefense",
+          "weight": 995.386243
+        },
+        {
+          "id": "bodypress",
+          "weight": 980.414708
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Impish:248/0/252/0/8/0",
+          "weight": 472.730015
+        },
+        {
+          "id": "Bold:56/0/244/0/0/208",
+          "weight": 343.762667
+        },
+        {
+          "id": "Careful:252/0/4/0/252/0",
+          "weight": 293.467719
+        },
+        {
+          "id": "Impish:56/0/252/0/0/200",
+          "weight": 136.81753
+        },
+        {
+          "id": "Relaxed:248/0/252/0/8/0",
+          "weight": 131.568359
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Dondozo",
+          "weight": 874.179635
+        },
+        {
+          "id": "Gliscor",
+          "weight": 780.746599
+        },
+        {
+          "id": "Clodsire",
+          "weight": 737.189177
+        },
+        {
+          "id": "Toxapex",
+          "weight": 693.377492
+        },
+        {
+          "id": "Slowking-Galar",
+          "weight": 625.753269
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "dragon",
+          "weight": 941.879733
+        },
+        {
+          "id": "fighting",
+          "weight": 631.645502
+        },
+        {
+          "id": "ice",
+          "weight": 91.592999
+        },
+        {
+          "id": "ghost",
+          "weight": 57.319716
+        },
+        {
+          "id": "fire",
+          "weight": 47.219728
+        }
+      ]
+    },
+    {
+      "name": "Slowking-Galar",
+      "usage": 15.11291,
+      "rawCount": 173332,
+      "abilities": [
+        {
+          "id": "regenerator",
+          "weight": 1819.184386
+        },
+        {
+          "id": "curiousmedicine",
+          "weight": 1.658658
+        },
+        {
+          "id": "owntempo",
+          "weight": 0.000577
+        }
+      ],
+      "items": [
+        {
+          "id": "assaultvest",
+          "weight": 674.209829
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 503.821126
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 233.034352
+        },
+        {
+          "id": "colburberry",
+          "weight": 137.978191
+        },
+        {
+          "id": "blacksludge",
+          "weight": 112.07024
+        }
+      ],
+      "moves": [
+        {
+          "id": "sludgebomb",
+          "weight": 1659.841453
+        },
+        {
+          "id": "chillyreception",
+          "weight": 1133.269276
+        },
+        {
+          "id": "futuresight",
+          "weight": 1087.608163
+        },
+        {
+          "id": "icebeam",
+          "weight": 816.663941
+        },
+        {
+          "id": "flamethrower",
+          "weight": 781.104488
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Relaxed:248/0/252/0/8/0",
+          "weight": 310.274081
+        },
+        {
+          "id": "Modest:248/0/16/152/92/0",
+          "weight": 156.491696
+        },
+        {
+          "id": "Modest:252/0/16/140/96/4",
+          "weight": 151.547798
+        },
+        {
+          "id": "Sassy:252/0/4/0/252/0",
+          "weight": 140.296239
+        },
+        {
+          "id": "Bold:248/0/252/0/8/0",
+          "weight": 126.618835
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 943.641469
+        },
+        {
+          "id": "Kyurem",
+          "weight": 660.621475
+        },
+        {
+          "id": "Cinderace",
+          "weight": 642.078246
+        },
+        {
+          "id": "Corviknight",
+          "weight": 625.753269
+        },
+        {
+          "id": "Kingambit",
+          "weight": 541.264601
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "water",
+          "weight": 1005.713146
+        },
+        {
+          "id": "fairy",
+          "weight": 363.970197
+        },
+        {
+          "id": "ice",
+          "weight": 202.123182
+        },
+        {
+          "id": "grass",
+          "weight": 156.270249
+        },
+        {
+          "id": "bug",
+          "weight": 25.226631
+        }
+      ]
+    },
+    {
+      "name": "Samurott-Hisui",
+      "usage": 14.70382,
+      "rawCount": 130504,
+      "abilities": [
+        {
+          "id": "sharpness",
+          "weight": 1765.193556
+        },
+        {
+          "id": "torrent",
+          "weight": 0.586161
+        }
+      ],
+      "items": [
+        {
+          "id": "assaultvest",
+          "weight": 685.520146
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 428.087729
+        },
+        {
+          "id": "blackglasses",
+          "weight": 354.198207
+        },
+        {
+          "id": "choicescarf",
+          "weight": 124.91527
+        },
+        {
+          "id": "focussash",
+          "weight": 61.436601
+        }
+      ],
+      "moves": [
+        {
+          "id": "ceaselessedge",
+          "weight": 1765.58468
+        },
+        {
+          "id": "knockoff",
+          "weight": 1231.981685
+        },
+        {
+          "id": "suckerpunch",
+          "weight": 1152.340339
+        },
+        {
+          "id": "razorshell",
+          "weight": 673.650749
+        },
+        {
+          "id": "flipturn",
+          "weight": 666.639841
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Adamant:0/252/4/0/0/252",
+          "weight": 338.489558
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 192.575543
+        },
+        {
+          "id": "Adamant:0/252/0/0/4/252",
+          "weight": 174.302836
+        },
+        {
+          "id": "Adamant:200/116/0/0/0/192",
+          "weight": 151.512362
+        },
+        {
+          "id": "Adamant:248/84/0/0/124/52",
+          "weight": 118.808846
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 733.783035
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 697.113121
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 623.601369
+        },
+        {
+          "id": "Dragonite",
+          "weight": 570.699498
+        },
+        {
+          "id": "Kyurem",
+          "weight": 447.297454
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "poison",
+          "weight": 634.985225
+        },
+        {
+          "id": "dark",
+          "weight": 417.59643
+        },
+        {
+          "id": "ghost",
+          "weight": 255.662337
+        },
+        {
+          "id": "fire",
+          "weight": 204.334788
+        },
+        {
+          "id": "water",
+          "weight": 184.009916
+        }
+      ]
+    },
+    {
+      "name": "Raging Bolt",
+      "usage": 13.44881,
+      "rawCount": 162774,
+      "abilities": [
+        {
+          "id": "protosynthesis",
+          "weight": 1619.194996
+        }
+      ],
+      "items": [
+        {
+          "id": "boosterenergy",
+          "weight": 929.811216
+        },
+        {
+          "id": "choicespecs",
+          "weight": 318.005935
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 118.909881
+        },
+        {
+          "id": "leftovers",
+          "weight": 95.812941
+        },
+        {
+          "id": "lifeorb",
+          "weight": 78.902735
+        }
+      ],
+      "moves": [
+        {
+          "id": "thunderclap",
+          "weight": 1576.467994
+        },
+        {
+          "id": "thunderbolt",
+          "weight": 1123.302282
+        },
+        {
+          "id": "dragonpulse",
+          "weight": 1069.186018
+        },
+        {
+          "id": "calmmind",
+          "weight": 1044.749565
+        },
+        {
+          "id": "dracometeor",
+          "weight": 582.330344
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Modest:248/0/8/252/0/0",
+          "weight": 262.928338
+        },
+        {
+          "id": "Modest:0/0/0/252/4/252",
+          "weight": 256.699028
+        },
+        {
+          "id": "Modest:0/0/4/252/0/252",
+          "weight": 236.20926
+        },
+        {
+          "id": "Modest:112/0/0/252/0/144",
+          "weight": 169.866609
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 152.596187
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Ogerpon-Wellspring",
+          "weight": 547.306387
+        },
+        {
+          "id": "Kingambit",
+          "weight": 451.665297
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 435.832829
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 413.386856
+        },
+        {
+          "id": "Glimmora",
+          "weight": 361.31423
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "fairy",
+          "weight": 767.652101
+        },
+        {
+          "id": "ghost",
+          "weight": 310.758738
+        },
+        {
+          "id": "bug",
+          "weight": 255.67624
+        },
+        {
+          "id": "dragon",
+          "weight": 110.565116
+        },
+        {
+          "id": "fire",
+          "weight": 68.172714
+        }
+      ]
+    },
+    {
+      "name": "Dragapult",
+      "usage": 12.6336,
+      "rawCount": 190219,
+      "abilities": [
+        {
+          "id": "infiltrator",
+          "weight": 885.528916
+        },
+        {
+          "id": "clearbody",
+          "weight": 602.020832
+        },
+        {
+          "id": "cursedbody",
+          "weight": 31.27552
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 490.082649
+        },
+        {
+          "id": "choicespecs",
+          "weight": 411.223209
+        },
+        {
+          "id": "choiceband",
+          "weight": 158.618114
+        },
+        {
+          "id": "leftovers",
+          "weight": 80.152257
+        },
+        {
+          "id": "lifeorb",
+          "weight": 73.040242
+        }
+      ],
+      "moves": [
+        {
+          "id": "willowisp",
+          "weight": 906.917535
+        },
+        {
+          "id": "uturn",
+          "weight": 902.854532
+        },
+        {
+          "id": "dracometeor",
+          "weight": 895.791586
+        },
+        {
+          "id": "hex",
+          "weight": 754.653521
+        },
+        {
+          "id": "dragondarts",
+          "weight": 686.231372
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 488.731583
+        },
+        {
+          "id": "Naive:0/4/0/252/0/252",
+          "weight": 166.720586
+        },
+        {
+          "id": "Timid:4/0/0/252/0/252",
+          "weight": 83.619735
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 80.647295
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 73.762954
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Kingambit",
+          "weight": 621.503458
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 614.882835
+        },
+        {
+          "id": "Slowking-Galar",
+          "weight": 326.343993
+        },
+        {
+          "id": "Samurott-Hisui",
+          "weight": 320.637072
+        },
+        {
+          "id": "Corviknight",
+          "weight": 319.725215
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 734.941197
+        },
+        {
+          "id": "dragon",
+          "weight": 426.006712
+        },
+        {
+          "id": "fairy",
+          "weight": 134.950768
+        },
+        {
+          "id": "normal",
+          "weight": 90.927776
+        },
+        {
+          "id": "steel",
+          "weight": 77.993077
+        }
+      ]
+    },
+    {
+      "name": "Cinderace",
+      "usage": 12.02511,
+      "rawCount": 151270,
+      "abilities": [
+        {
+          "id": "blaze",
+          "weight": 921.332105
+        },
+        {
+          "id": "libero",
+          "weight": 524.822394
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 1313.233552
+        },
+        {
+          "id": "choiceband",
+          "weight": 59.545149
+        },
+        {
+          "id": "charcoal",
+          "weight": 28.186469
+        },
+        {
+          "id": "lifeorb",
+          "weight": 16.855008
+        },
+        {
+          "id": "normalgem",
+          "weight": 8.308702
+        }
+      ],
+      "moves": [
+        {
+          "id": "pyroball",
+          "weight": 1431.299222
+        },
+        {
+          "id": "uturn",
+          "weight": 1288.238585
+        },
+        {
+          "id": "courtchange",
+          "weight": 1271.644192
+        },
+        {
+          "id": "willowisp",
+          "weight": 889.952973
+        },
+        {
+          "id": "suckerpunch",
+          "weight": 362.394759
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Jolly:224/32/0/0/0/252",
+          "weight": 232.903885
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 193.502975
+        },
+        {
+          "id": "Jolly:248/8/0/0/0/252",
+          "weight": 192.823307
+        },
+        {
+          "id": "Jolly:0/252/4/0/0/252",
+          "weight": 188.182043
+        },
+        {
+          "id": "Jolly:4/252/0/0/0/252",
+          "weight": 123.710528
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Slowking-Galar",
+          "weight": 642.078246
+        },
+        {
+          "id": "Kyurem",
+          "weight": 519.2728
+        },
+        {
+          "id": "Kingambit",
+          "weight": 486.696092
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 458.818516
+        },
+        {
+          "id": "Landorus-Therian",
+          "weight": 351.976009
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 554.016602
+        },
+        {
+          "id": "fire",
+          "weight": 551.901027
+        },
+        {
+          "id": "flying",
+          "weight": 175.462919
+        },
+        {
+          "id": "grass",
+          "weight": 83.443396
+        },
+        {
+          "id": "fighting",
+          "weight": 28.578486
+        }
+      ]
+    },
+    {
+      "name": "Ogerpon",
+      "usage": 11.89421,
+      "rawCount": 65826,
+      "abilities": [
+        {
+          "id": "defiant",
+          "weight": 1431.274551
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 650.22298
+        },
+        {
+          "id": "choiceband",
+          "weight": 366.295611
+        },
+        {
+          "id": "scopelens",
+          "weight": 312.240737
+        },
+        {
+          "id": "whiteherb",
+          "weight": 45.670682
+        },
+        {
+          "id": "muscleband",
+          "weight": 38.94005
+        }
+      ],
+      "moves": [
+        {
+          "id": "ivycudgel",
+          "weight": 1430.367387
+        },
+        {
+          "id": "knockoff",
+          "weight": 1362.735864
+        },
+        {
+          "id": "encore",
+          "weight": 1014.003655
+        },
+        {
+          "id": "uturn",
+          "weight": 607.509065
+        },
+        {
+          "id": "swordsdance",
+          "weight": 438.972535
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 682.875099
+        },
+        {
+          "id": "Jolly:0/252/4/0/0/252",
+          "weight": 486.361647
+        },
+        {
+          "id": "Jolly:4/252/0/0/0/252",
+          "weight": 126.537896
+        },
+        {
+          "id": "Adamant:4/252/0/0/0/252",
+          "weight": 68.052342
+        },
+        {
+          "id": "Jolly:104/152/0/0/0/252",
+          "weight": 34.05993
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Ting-Lu",
+          "weight": 700.951675
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 578.553282
+        },
+        {
+          "id": "Gliscor",
+          "weight": 377.477445
+        },
+        {
+          "id": "Dragonite",
+          "weight": 323.599388
+        },
+        {
+          "id": "Corviknight",
+          "weight": 317.078106
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "grass",
+          "weight": 1431.274551
+        }
+      ]
+    },
+    {
+      "name": "Iron Treads",
+      "usage": 11.71576,
+      "rawCount": 130541,
+      "abilities": [
+        {
+          "id": "quarkdrive",
+          "weight": 1408.335601
+        }
+      ],
+      "items": [
+        {
+          "id": "leftovers",
+          "weight": 525.031913
+        },
+        {
+          "id": "boosterenergy",
+          "weight": 448.26306
+        },
+        {
+          "id": "earthplate",
+          "weight": 166.23964
+        },
+        {
+          "id": "assaultvest",
+          "weight": 78.843812
+        },
+        {
+          "id": "airballoon",
+          "weight": 55.127141
+        }
+      ],
+      "moves": [
+        {
+          "id": "rapidspin",
+          "weight": 1405.637681
+        },
+        {
+          "id": "earthquake",
+          "weight": 1138.675898
+        },
+        {
+          "id": "stealthrock",
+          "weight": 1081.842261
+        },
+        {
+          "id": "icespinner",
+          "weight": 633.962054
+        },
+        {
+          "id": "knockoff",
+          "weight": 483.476815
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 174.103236
+        },
+        {
+          "id": "Adamant:4/252/0/0/0/252",
+          "weight": 117.826632
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 95.724479
+        },
+        {
+          "id": "Adamant:0/252/0/0/4/252",
+          "weight": 84.884073
+        },
+        {
+          "id": "Careful:252/0/0/0/232/24",
+          "weight": 73.882306
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Zamazenta",
+          "weight": 736.391636
+        },
+        {
+          "id": "Ogerpon-Wellspring",
+          "weight": 375.816369
+        },
+        {
+          "id": "Raging Bolt",
+          "weight": 342.517144
+        },
+        {
+          "id": "Pecharunt",
+          "weight": 324.196299
+        },
+        {
+          "id": "Kyurem",
+          "weight": 302.700326
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 843.666777
+        },
+        {
+          "id": "ground",
+          "weight": 255.830112
+        },
+        {
+          "id": "water",
+          "weight": 119.885354
+        },
+        {
+          "id": "ice",
+          "weight": 51.22937
+        },
+        {
+          "id": "electric",
+          "weight": 49.451424
+        }
+      ]
+    },
+    {
+      "name": "Iron Valiant",
+      "usage": 11.6074,
+      "rawCount": 196787,
+      "abilities": [
+        {
+          "id": "quarkdrive",
+          "weight": 1399.667303
+        }
+      ],
+      "items": [
+        {
+          "id": "boosterenergy",
+          "weight": 1081.541372
+        },
+        {
+          "id": "choicespecs",
+          "weight": 140.871858
+        },
+        {
+          "id": "choicescarf",
+          "weight": 49.480914
+        },
+        {
+          "id": "expertbelt",
+          "weight": 44.906282
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 40.930161
+        }
+      ],
+      "moves": [
+        {
+          "id": "moonblast",
+          "weight": 1217.021588
+        },
+        {
+          "id": "knockoff",
+          "weight": 711.562337
+        },
+        {
+          "id": "calmmind",
+          "weight": 485.361855
+        },
+        {
+          "id": "shadowball",
+          "weight": 482.205237
+        },
+        {
+          "id": "closecombat",
+          "weight": 420.817909
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Naive:0/4/0/252/0/252",
+          "weight": 458.618119
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 366.430611
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 88.994
+        },
+        {
+          "id": "Timid:4/0/0/252/0/252",
+          "weight": 84.074602
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 83.086546
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Kingambit",
+          "weight": 587.643498
+        },
+        {
+          "id": "Dragonite",
+          "weight": 576.105111
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 530.798686
+        },
+        {
+          "id": "Glimmora",
+          "weight": 505.71896
+        },
+        {
+          "id": "Kyurem",
+          "weight": 402.81119
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 684.271506
+        },
+        {
+          "id": "steel",
+          "weight": 271.687773
+        },
+        {
+          "id": "fairy",
+          "weight": 198.462653
+        },
+        {
+          "id": "electric",
+          "weight": 113.090594
+        },
+        {
+          "id": "dark",
+          "weight": 67.531163
+        }
+      ]
+    },
+    {
+      "name": "Landorus-Therian",
+      "usage": 10.85831,
+      "rawCount": 121641,
+      "abilities": [
+        {
+          "id": "intimidate",
+          "weight": 1304.478248
+        }
+      ],
+      "items": [
+        {
+          "id": "rockyhelmet",
+          "weight": 614.424527
+        },
+        {
+          "id": "choicescarf",
+          "weight": 426.19761
+        },
+        {
+          "id": "leftovers",
+          "weight": 128.937399
+        },
+        {
+          "id": "earthplate",
+          "weight": 50.754891
+        },
+        {
+          "id": "lightball",
+          "weight": 47.273958
+        }
+      ],
+      "moves": [
+        {
+          "id": "uturn",
+          "weight": 1288.146079
+        },
+        {
+          "id": "earthquake",
+          "weight": 921.712069
+        },
+        {
+          "id": "stealthrock",
+          "weight": 856.765047
+        },
+        {
+          "id": "stoneedge",
+          "weight": 540.697638
+        },
+        {
+          "id": "taunt",
+          "weight": 453.538273
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Naive:0/252/0/4/0/252",
+          "weight": 206.75264
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 144.636481
+        },
+        {
+          "id": "Careful:252/4/0/0/244/8",
+          "weight": 118.214138
+        },
+        {
+          "id": "Timid:252/0/4/0/0/252",
+          "weight": 103.651966
+        },
+        {
+          "id": "Jolly:0/252/4/0/0/252",
+          "weight": 78.937976
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Kingambit",
+          "weight": 665.167766
+        },
+        {
+          "id": "Kyurem",
+          "weight": 625.166597
+        },
+        {
+          "id": "Ogerpon-Wellspring",
+          "weight": 448.20741
+        },
+        {
+          "id": "Cinderace",
+          "weight": 351.976009
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 345.427885
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "water",
+          "weight": 444.587204
+        },
+        {
+          "id": "ground",
+          "weight": 340.592808
+        },
+        {
+          "id": "ghost",
+          "weight": 257.138945
+        },
+        {
+          "id": "fairy",
+          "weight": 128.976771
+        },
+        {
+          "id": "dragon",
+          "weight": 30.553393
+        }
+      ]
+    },
+    {
+      "name": "Pecharunt",
+      "usage": 10.3755,
+      "rawCount": 94211,
+      "abilities": [
+        {
+          "id": "poisonpuppeteer",
+          "weight": 1245.816224
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 850.499751
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 264.17054
+        },
+        {
+          "id": "airballoon",
+          "weight": 45.504291
+        },
+        {
+          "id": "shucaberry",
+          "weight": 37.633539
+        },
+        {
+          "id": "covertcloak",
+          "weight": 31.383502
+        }
+      ],
+      "moves": [
+        {
+          "id": "recover",
+          "weight": 1234.46696
+        },
+        {
+          "id": "shadowball",
+          "weight": 1071.678085
+        },
+        {
+          "id": "malignantchain",
+          "weight": 852.052642
+        },
+        {
+          "id": "partingshot",
+          "weight": 765.573875
+        },
+        {
+          "id": "nastyplot",
+          "weight": 477.380567
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:248/0/0/8/0/252",
+          "weight": 184.900684
+        },
+        {
+          "id": "Bold:216/0/252/0/0/40",
+          "weight": 147.150714
+        },
+        {
+          "id": "Bold:252/0/228/0/0/28",
+          "weight": 129.081023
+        },
+        {
+          "id": "Timid:252/0/0/4/0/252",
+          "weight": 106.707518
+        },
+        {
+          "id": "Timid:4/0/252/0/0/252",
+          "weight": 80.109793
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Zamazenta",
+          "weight": 507.013127
+        },
+        {
+          "id": "Samurott-Hisui",
+          "weight": 329.982146
+        },
+        {
+          "id": "Iron Treads",
+          "weight": 324.196299
+        },
+        {
+          "id": "Gliscor",
+          "weight": 314.942703
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 298.145247
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 835.557453
+        },
+        {
+          "id": "dark",
+          "weight": 169.784715
+        },
+        {
+          "id": "water",
+          "weight": 122.937829
+        },
+        {
+          "id": "grass",
+          "weight": 60.944944
+        },
+        {
+          "id": "fairy",
+          "weight": 47.487552
+        }
+      ]
+    },
+    {
+      "name": "Hatterene",
+      "usage": 9.64164,
+      "rawCount": 151055,
+      "abilities": [
+        {
+          "id": "magicbounce",
+          "weight": 1164.319815
+        },
+        {
+          "id": "healer",
+          "weight": 0.999197
+        },
+        {
+          "id": "anticipation",
+          "weight": 0.000721
+        }
+      ],
+      "items": [
+        {
+          "id": "assaultvest",
+          "weight": 337.211974
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 294.794324
+        },
+        {
+          "id": "ejectbutton",
+          "weight": 145.088462
+        },
+        {
+          "id": "leftovers",
+          "weight": 118.341358
+        },
+        {
+          "id": "custapberry",
+          "weight": 118.21586
+        }
+      ],
+      "moves": [
+        {
+          "id": "psychicnoise",
+          "weight": 979.695763
+        },
+        {
+          "id": "nuzzle",
+          "weight": 780.956291
+        },
+        {
+          "id": "drainingkiss",
+          "weight": 778.559261
+        },
+        {
+          "id": "mysticalfire",
+          "weight": 524.955682
+        },
+        {
+          "id": "healingwish",
+          "weight": 388.906569
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Bold:252/0/204/0/0/52",
+          "weight": 167.943411
+        },
+        {
+          "id": "Bold:248/0/204/0/0/56",
+          "weight": 84.973103
+        },
+        {
+          "id": "Modest:184/0/0/252/0/72",
+          "weight": 70.090139
+        },
+        {
+          "id": "Relaxed:248/0/252/0/8/0",
+          "weight": 56.546567
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 55.23681
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 644.99811
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 361.949765
+        },
+        {
+          "id": "Kingambit",
+          "weight": 356.649802
+        },
+        {
+          "id": "Dragonite",
+          "weight": 333.344879
+        },
+        {
+          "id": "Kyurem",
+          "weight": 311.183812
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "water",
+          "weight": 422.060339
+        },
+        {
+          "id": "flying",
+          "weight": 288.206818
+        },
+        {
+          "id": "steel",
+          "weight": 165.111478
+        },
+        {
+          "id": "poison",
+          "weight": 107.252218
+        },
+        {
+          "id": "bug",
+          "weight": 41.590333
+        }
+      ]
+    },
+    {
+      "name": "Darkrai",
+      "usage": 9.04109,
+      "rawCount": 113026,
+      "abilities": [
+        {
+          "id": "baddreams",
+          "weight": 1086.854624
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 206.784108
+        },
+        {
+          "id": "leftovers",
+          "weight": 192.343609
+        },
+        {
+          "id": "choicespecs",
+          "weight": 171.652076
+        },
+        {
+          "id": "mirrorherb",
+          "weight": 135.897298
+        },
+        {
+          "id": "choicescarf",
+          "weight": 127.237392
+        }
+      ],
+      "moves": [
+        {
+          "id": "darkpulse",
+          "weight": 1073.462418
+        },
+        {
+          "id": "icebeam",
+          "weight": 796.026329
+        },
+        {
+          "id": "sludgebomb",
+          "weight": 573.59618
+        },
+        {
+          "id": "nastyplot",
+          "weight": 488.356556
+        },
+        {
+          "id": "focusblast",
+          "weight": 355.15816
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 524.566289
+        },
+        {
+          "id": "Timid:4/0/0/252/0/252",
+          "weight": 188.127888
+        },
+        {
+          "id": "Naive:0/100/0/156/0/252",
+          "weight": 99.465601
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 97.552005
+        },
+        {
+          "id": "Timid:120/0/48/88/0/252",
+          "weight": 71.995809
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 410.512414
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 265.67602
+        },
+        {
+          "id": "Alomomola",
+          "weight": 253.359818
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 249.217222
+        },
+        {
+          "id": "Landorus-Therian",
+          "weight": 224.331387
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "poison",
+          "weight": 599.355738
+        },
+        {
+          "id": "dark",
+          "weight": 300.576554
+        },
+        {
+          "id": "ghost",
+          "weight": 122.936694
+        },
+        {
+          "id": "electric",
+          "weight": 42.34192
+        },
+        {
+          "id": "fairy",
+          "weight": 14.776381
+        }
+      ]
+    },
+    {
+      "name": "Dondozo",
+      "usage": 8.68069,
+      "rawCount": 68016,
+      "abilities": [
+        {
+          "id": "unaware",
+          "weight": 1081.134154
+        },
+        {
+          "id": "waterveil",
+          "weight": 0.014936
+        },
+        {
+          "id": "oblivious",
+          "weight": 0.007423
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 631.59845
+        },
+        {
+          "id": "leftovers",
+          "weight": 415.738068
+        },
+        {
+          "id": "choiceband",
+          "weight": 18.980033
+        },
+        {
+          "id": "covertcloak",
+          "weight": 8.883045
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 3.361759
+        }
+      ],
+      "moves": [
+        {
+          "id": "rest",
+          "weight": 1058.873512
+        },
+        {
+          "id": "curse",
+          "weight": 1021.219748
+        },
+        {
+          "id": "sleeptalk",
+          "weight": 860.530578
+        },
+        {
+          "id": "waterfall",
+          "weight": 669.211404
+        },
+        {
+          "id": "bodypress",
+          "weight": 236.07442
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Impish:252/0/252/0/4/0",
+          "weight": 428.88203
+        },
+        {
+          "id": "Impish:248/0/252/0/8/0",
+          "weight": 357.310969
+        },
+        {
+          "id": "Impish:248/0/8/0/252/0",
+          "weight": 66.222445
+        },
+        {
+          "id": "Impish:248/8/252/0/0/0",
+          "weight": 59.001638
+        },
+        {
+          "id": "Careful:252/0/4/0/252/0",
+          "weight": 32.680359
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Corviknight",
+          "weight": 874.179635
+        },
+        {
+          "id": "Gliscor",
+          "weight": 798.043535
+        },
+        {
+          "id": "Clodsire",
+          "weight": 784.483968
+        },
+        {
+          "id": "Toxapex",
+          "weight": 680.91344
+        },
+        {
+          "id": "Blissey",
+          "weight": 541.096969
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "fighting",
+          "weight": 604.370314
+        },
+        {
+          "id": "dark",
+          "weight": 295.834907
+        },
+        {
+          "id": "dragon",
+          "weight": 71.202094
+        },
+        {
+          "id": "fire",
+          "weight": 50.537583
+        },
+        {
+          "id": "grass",
+          "weight": 30.121248
+        }
+      ]
+    },
+    {
+      "name": "Cresselia",
+      "usage": 8.57311,
+      "rawCount": 35111,
+      "abilities": [
+        {
+          "id": "levitate",
+          "weight": 1026.164662
+        }
+      ],
+      "items": [
+        {
+          "id": "leftovers",
+          "weight": 648.061854
+        },
+        {
+          "id": "covertcloak",
+          "weight": 169.196904
+        },
+        {
+          "id": "lightclay",
+          "weight": 80.690856
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 78.558692
+        },
+        {
+          "id": "ejectbutton",
+          "weight": 21.552867
+        }
+      ],
+      "moves": [
+        {
+          "id": "calmmind",
+          "weight": 817.767134
+        },
+        {
+          "id": "moonlight",
+          "weight": 734.865192
+        },
+        {
+          "id": "moonblast",
+          "weight": 468.755847
+        },
+        {
+          "id": "icebeam",
+          "weight": 464.621031
+        },
+        {
+          "id": "storedpower",
+          "weight": 431.263433
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Modest:160/0/0/252/0/96",
+          "weight": 159.556605
+        },
+        {
+          "id": "Modest:152/0/0/252/0/104",
+          "weight": 64.787935
+        },
+        {
+          "id": "Bold:252/0/180/0/8/68",
+          "weight": 61.04824
+        },
+        {
+          "id": "Bold:248/0/100/92/0/68",
+          "weight": 58.668059
+        },
+        {
+          "id": "Calm:200/0/0/0/252/56",
+          "weight": 56.912359
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Zamazenta",
+          "weight": 452.185621
+        },
+        {
+          "id": "Kingambit",
+          "weight": 419.368613
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 296.996792
+        },
+        {
+          "id": "Raging Bolt",
+          "weight": 252.757357
+        },
+        {
+          "id": "Dragapult",
+          "weight": 247.974682
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "electric",
+          "weight": 366.318867
+        },
+        {
+          "id": "fairy",
+          "weight": 294.114572
+        },
+        {
+          "id": "poison",
+          "weight": 175.894228
+        },
+        {
+          "id": "steel",
+          "weight": 159.720202
+        },
+        {
+          "id": "dark",
+          "weight": 19.740431
+        }
+      ]
+    },
+    {
+      "name": "Rillaboom",
+      "usage": 8.33926,
+      "rawCount": 87257,
+      "abilities": [
+        {
+          "id": "grassysurge",
+          "weight": 1004.191893
+        },
+        {
+          "id": "overgrow",
+          "weight": 0.605087
+        }
+      ],
+      "items": [
+        {
+          "id": "lifeorb",
+          "weight": 503.803152
+        },
+        {
+          "id": "choiceband",
+          "weight": 286.534347
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 81.7673
+        },
+        {
+          "id": "lumberry",
+          "weight": 56.793283
+        },
+        {
+          "id": "terrainextender",
+          "weight": 41.957683
+        }
+      ],
+      "moves": [
+        {
+          "id": "grassyglide",
+          "weight": 1004.125799
+        },
+        {
+          "id": "knockoff",
+          "weight": 991.493692
+        },
+        {
+          "id": "swordsdance",
+          "weight": 573.395659
+        },
+        {
+          "id": "woodhammer",
+          "weight": 478.539313
+        },
+        {
+          "id": "highhorsepower",
+          "weight": 425.151571
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Adamant:0/252/4/0/0/252",
+          "weight": 430.148561
+        },
+        {
+          "id": "Adamant:4/252/0/0/0/252",
+          "weight": 166.213561
+        },
+        {
+          "id": "Adamant:0/252/0/0/4/252",
+          "weight": 122.736762
+        },
+        {
+          "id": "Adamant:160/252/0/0/0/96",
+          "weight": 69.551313
+        },
+        {
+          "id": "Adamant:204/252/0/0/0/52",
+          "weight": 30.061008
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gholdengo",
+          "weight": 618.339835
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 436.664681
+        },
+        {
+          "id": "Glimmora",
+          "weight": 383.61
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 314.843632
+        },
+        {
+          "id": "Ceruledge",
+          "weight": 294.042102
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "dark",
+          "weight": 501.145628
+        },
+        {
+          "id": "grass",
+          "weight": 417.1456
+        },
+        {
+          "id": "fire",
+          "weight": 68.179718
+        },
+        {
+          "id": "ground",
+          "weight": 4.096172
+        },
+        {
+          "id": "electric",
+          "weight": 3.783903
+        }
+      ]
+    },
+    {
+      "name": "Ceruledge",
+      "usage": 7.87431,
+      "rawCount": 112473,
+      "abilities": [
+        {
+          "id": "weakarmor",
+          "weight": 921.340884
+        },
+        {
+          "id": "flashfire",
+          "weight": 22.866663
+        }
+      ],
+      "items": [
+        {
+          "id": "lifeorb",
+          "weight": 509.325629
+        },
+        {
+          "id": "airballoon",
+          "weight": 215.538575
+        },
+        {
+          "id": "focussash",
+          "weight": 123.337018
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 58.920827
+        },
+        {
+          "id": "weaknesspolicy",
+          "weight": 17.677922
+        }
+      ],
+      "moves": [
+        {
+          "id": "bitterblade",
+          "weight": 935.299339
+        },
+        {
+          "id": "swordsdance",
+          "weight": 918.763336
+        },
+        {
+          "id": "shadowsneak",
+          "weight": 864.033192
+        },
+        {
+          "id": "poltergeist",
+          "weight": 847.516401
+        },
+        {
+          "id": "closecombat",
+          "weight": 149.293803
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Adamant:80/252/0/0/0/176",
+          "weight": 401.184327
+        },
+        {
+          "id": "Adamant:0/252/0/0/4/252",
+          "weight": 143.472332
+        },
+        {
+          "id": "Adamant:96/236/0/0/0/176",
+          "weight": 82.977108
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 51.325588
+        },
+        {
+          "id": "Adamant:96/232/0/0/0/180",
+          "weight": 30.646064
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Glimmora",
+          "weight": 434.844264
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 429.321022
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 304.759009
+        },
+        {
+          "id": "Rillaboom",
+          "weight": 294.042102
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 277.877727
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 559.837472
+        },
+        {
+          "id": "fairy",
+          "weight": 279.717195
+        },
+        {
+          "id": "fighting",
+          "weight": 65.524588
+        },
+        {
+          "id": "grass",
+          "weight": 13.92745
+        },
+        {
+          "id": "bug",
+          "weight": 13.720646
+        }
+      ]
+    },
+    {
+      "name": "Clodsire",
+      "usage": 7.66159,
+      "rawCount": 47972,
+      "abilities": [
+        {
+          "id": "unaware",
+          "weight": 904.621708
+        },
+        {
+          "id": "waterabsorb",
+          "weight": 51.15481
+        },
+        {
+          "id": "poisonpoint",
+          "weight": 0.044545
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 804.65033
+        },
+        {
+          "id": "leftovers",
+          "weight": 77.116528
+        },
+        {
+          "id": "covertcloak",
+          "weight": 47.199854
+        },
+        {
+          "id": "blacksludge",
+          "weight": 24.831042
+        },
+        {
+          "id": "shucaberry",
+          "weight": 1.792705
+        }
+      ],
+      "moves": [
+        {
+          "id": "recover",
+          "weight": 955.653066
+        },
+        {
+          "id": "poisonjab",
+          "weight": 734.611455
+        },
+        {
+          "id": "spikes",
+          "weight": 651.272906
+        },
+        {
+          "id": "amnesia",
+          "weight": 537.634427
+        },
+        {
+          "id": "earthquake",
+          "weight": 535.896918
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Careful:116/0/148/0/244/0",
+          "weight": 345.874964
+        },
+        {
+          "id": "Careful:248/0/8/0/252/0",
+          "weight": 308.971997
+        },
+        {
+          "id": "Careful:252/0/4/0/252/0",
+          "weight": 63.126409
+        },
+        {
+          "id": "Careful:252/0/0/0/252/4",
+          "weight": 51.467425
+        },
+        {
+          "id": "Careful:116/0/108/0/244/0",
+          "weight": 42.057319
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gliscor",
+          "weight": 808.792411
+        },
+        {
+          "id": "Dondozo",
+          "weight": 784.483968
+        },
+        {
+          "id": "Corviknight",
+          "weight": 737.189177
+        },
+        {
+          "id": "Toxapex",
+          "weight": 679.079751
+        },
+        {
+          "id": "Blissey",
+          "weight": 509.499353
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "steel",
+          "weight": 837.168892
+        },
+        {
+          "id": "dark",
+          "weight": 104.287237
+        },
+        {
+          "id": "fairy",
+          "weight": 4.493379
+        },
+        {
+          "id": "poison",
+          "weight": 3.005837
+        },
+        {
+          "id": "dragon",
+          "weight": 2.35631
+        }
+      ]
+    },
+    {
+      "name": "Clefable",
+      "usage": 7.59264,
+      "rawCount": 86554,
+      "abilities": [
+        {
+          "id": "magicguard",
+          "weight": 716.933445
+        },
+        {
+          "id": "unaware",
+          "weight": 206.66932
+        },
+        {
+          "id": "cutecharm",
+          "weight": 0.027727
+        }
+      ],
+      "items": [
+        {
+          "id": "leftovers",
+          "weight": 417.710622
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 193.15464
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 189.175348
+        },
+        {
+          "id": "stickybarb",
+          "weight": 96.62489
+        },
+        {
+          "id": "lifeorb",
+          "weight": 25.408169
+        }
+      ],
+      "moves": [
+        {
+          "id": "moonblast",
+          "weight": 907.729246
+        },
+        {
+          "id": "moonlight",
+          "weight": 893.253882
+        },
+        {
+          "id": "stealthrock",
+          "weight": 606.678871
+        },
+        {
+          "id": "knockoff",
+          "weight": 490.883647
+        },
+        {
+          "id": "cosmicpower",
+          "weight": 156.587117
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Bold:252/0/252/0/0/4",
+          "weight": 318.309638
+        },
+        {
+          "id": "Calm:252/0/4/0/252/0",
+          "weight": 213.387044
+        },
+        {
+          "id": "Bold:252/0/252/0/4/0",
+          "weight": 141.070755
+        },
+        {
+          "id": "Bold:252/0/72/0/0/184",
+          "weight": 94.433775
+        },
+        {
+          "id": "Bold:252/0/232/0/24/0",
+          "weight": 15.954245
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gliscor",
+          "weight": 622.034741
+        },
+        {
+          "id": "Corviknight",
+          "weight": 414.155763
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 360.258942
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 276.549085
+        },
+        {
+          "id": "Clodsire",
+          "weight": 258.320456
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "water",
+          "weight": 386.735274
+        },
+        {
+          "id": "ice",
+          "weight": 203.573168
+        },
+        {
+          "id": "steel",
+          "weight": 168.69669
+        },
+        {
+          "id": "ghost",
+          "weight": 106.275713
+        },
+        {
+          "id": "poison",
+          "weight": 20.555694
+        }
+      ]
+    },
+    {
+      "name": "Alomomola",
+      "usage": 7.50111,
+      "rawCount": 149088,
+      "abilities": [
+        {
+          "id": "regenerator",
+          "weight": 905.646138
+        },
+        {
+          "id": "healer",
+          "weight": 0.40338
+        },
+        {
+          "id": "hydration",
+          "weight": 0.00011
+        }
+      ],
+      "items": [
+        {
+          "id": "assaultvest",
+          "weight": 482.879099
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 193.52617
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 181.454559
+        },
+        {
+          "id": "leftovers",
+          "weight": 19.69707
+        },
+        {
+          "id": "covertcloak",
+          "weight": 15.089929
+        }
+      ],
+      "moves": [
+        {
+          "id": "flipturn",
+          "weight": 905.685062
+        },
+        {
+          "id": "mirrorcoat",
+          "weight": 549.388662
+        },
+        {
+          "id": "wish",
+          "weight": 413.668619
+        },
+        {
+          "id": "protect",
+          "weight": 403.098174
+        },
+        {
+          "id": "aquajet",
+          "weight": 344.494437
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Sassy:252/0/4/0/252/0",
+          "weight": 211.441953
+        },
+        {
+          "id": "Relaxed:252/0/252/0/4/0",
+          "weight": 141.339049
+        },
+        {
+          "id": "Relaxed:248/0/8/0/252/0",
+          "weight": 96.88506
+        },
+        {
+          "id": "Sassy:20/0/236/0/252/0",
+          "weight": 41.756818
+        },
+        {
+          "id": "Sassy:248/0/8/0/252/0",
+          "weight": 37.840967
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 312.366036
+        },
+        {
+          "id": "Cinderace",
+          "weight": 306.283054
+        },
+        {
+          "id": "Darkrai",
+          "weight": 253.359818
+        },
+        {
+          "id": "Weezing-Galar",
+          "weight": 223.438967
+        },
+        {
+          "id": "Corviknight",
+          "weight": 187.743566
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 274.231494
+        },
+        {
+          "id": "fairy",
+          "weight": 239.09997
+        },
+        {
+          "id": "normal",
+          "weight": 226.850768
+        },
+        {
+          "id": "dark",
+          "weight": 42.090137
+        },
+        {
+          "id": "poison",
+          "weight": 32.739005
+        }
+      ]
+    },
+    {
+      "name": "Enamorus",
+      "usage": 6.76007,
+      "rawCount": 53235,
+      "abilities": [
+        {
+          "id": "contrary",
+          "weight": 747.864839
+        },
+        {
+          "id": "cutecharm",
+          "weight": 64.970784
+        }
+      ],
+      "items": [
+        {
+          "id": "choicescarf",
+          "weight": 413.25162
+        },
+        {
+          "id": "choicespecs",
+          "weight": 162.408588
+        },
+        {
+          "id": "lifeorb",
+          "weight": 150.303046
+        },
+        {
+          "id": "metronome",
+          "weight": 48.481516
+        },
+        {
+          "id": "leftovers",
+          "weight": 22.768962
+        }
+      ],
+      "moves": [
+        {
+          "id": "moonblast",
+          "weight": 812.230487
+        },
+        {
+          "id": "earthpower",
+          "weight": 811.905773
+        },
+        {
+          "id": "healingwish",
+          "weight": 563.929445
+        },
+        {
+          "id": "mysticalfire",
+          "weight": 541.854706
+        },
+        {
+          "id": "substitute",
+          "weight": 202.806026
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Modest:0/0/0/252/4/252",
+          "weight": 421.251434
+        },
+        {
+          "id": "Modest:0/0/4/252/0/252",
+          "weight": 102.461352
+        },
+        {
+          "id": "Modest:4/0/0/252/0/252",
+          "weight": 94.300793
+        },
+        {
+          "id": "Timid:4/0/0/252/0/252",
+          "weight": 74.473789
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 56.309777
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 339.047521
+        },
+        {
+          "id": "Kingambit",
+          "weight": 329.132695
+        },
+        {
+          "id": "Raging Bolt",
+          "weight": 297.8164
+        },
+        {
+          "id": "Glimmora",
+          "weight": 240.101942
+        },
+        {
+          "id": "Cinderace",
+          "weight": 189.689796
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "fairy",
+          "weight": 467.661677
+        },
+        {
+          "id": "ground",
+          "weight": 262.809623
+        },
+        {
+          "id": "water",
+          "weight": 39.494619
+        },
+        {
+          "id": "stellar",
+          "weight": 14.248009
+        },
+        {
+          "id": "ghost",
+          "weight": 11.388471
+        }
+      ]
+    },
+    {
+      "name": "Blissey",
+      "usage": 6.69461,
+      "rawCount": 45643,
+      "abilities": [
+        {
+          "id": "naturalcure",
+          "weight": 824.106956
+        },
+        {
+          "id": "serenegrace",
+          "weight": 4.422073
+        },
+        {
+          "id": "healer",
+          "weight": 0.008255
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 798.265351
+        },
+        {
+          "id": "leftovers",
+          "weight": 29.623026
+        },
+        {
+          "id": "choicespecs",
+          "weight": 0.295606
+        },
+        {
+          "id": "choicescarf",
+          "weight": 0.124853
+        },
+        {
+          "id": "covertcloak",
+          "weight": 0.100259
+        }
+      ],
+      "moves": [
+        {
+          "id": "softboiled",
+          "weight": 828.370638
+        },
+        {
+          "id": "stealthrock",
+          "weight": 748.783353
+        },
+        {
+          "id": "seismictoss",
+          "weight": 722.734647
+        },
+        {
+          "id": "protect",
+          "weight": 397.320359
+        },
+        {
+          "id": "calmmind",
+          "weight": 267.44287
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Calm:4/0/252/0/252/0",
+          "weight": 474.431952
+        },
+        {
+          "id": "Bold:212/0/92/0/160/44",
+          "weight": 58.748591
+        },
+        {
+          "id": "Calm:0/0/252/0/252/4",
+          "weight": 47.816839
+        },
+        {
+          "id": "Bold:236/0/252/0/0/20",
+          "weight": 45.037211
+        },
+        {
+          "id": "Bold:252/0/252/0/0/4",
+          "weight": 43.95628
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gliscor",
+          "weight": 761.549515
+        },
+        {
+          "id": "Dondozo",
+          "weight": 541.096969
+        },
+        {
+          "id": "Clodsire",
+          "weight": 509.499353
+        },
+        {
+          "id": "Corviknight",
+          "weight": 461.860525
+        },
+        {
+          "id": "Toxapex",
+          "weight": 448.48505
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "dark",
+          "weight": 732.171975
+        },
+        {
+          "id": "water",
+          "weight": 45.910999
+        },
+        {
+          "id": "steel",
+          "weight": 16.13895
+        },
+        {
+          "id": "poison",
+          "weight": 16.015276
+        },
+        {
+          "id": "fairy",
+          "weight": 12.089884
+        }
+      ]
+    },
+    {
+      "name": "Toxapex",
+      "usage": 6.63079,
+      "rawCount": 54130,
+      "abilities": [
+        {
+          "id": "regenerator",
+          "weight": 823.666227
+        },
+        {
+          "id": "merciless",
+          "weight": 0.080382
+        },
+        {
+          "id": "limber",
+          "weight": 0.001442
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 478.407681
+        },
+        {
+          "id": "leftovers",
+          "weight": 278.90057
+        },
+        {
+          "id": "assaultvest",
+          "weight": 29.547709
+        },
+        {
+          "id": "ejectbutton",
+          "weight": 18.551994
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 7.23167
+        }
+      ],
+      "moves": [
+        {
+          "id": "recover",
+          "weight": 790.764362
+        },
+        {
+          "id": "toxic",
+          "weight": 521.889939
+        },
+        {
+          "id": "haze",
+          "weight": 469.924379
+        },
+        {
+          "id": "toxicspikes",
+          "weight": 427.191986
+        },
+        {
+          "id": "infestation",
+          "weight": 339.330458
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Bold:248/0/248/0/0/12",
+          "weight": 387.819258
+        },
+        {
+          "id": "Impish:252/0/244/0/0/12",
+          "weight": 129.608045
+        },
+        {
+          "id": "Impish:252/0/240/0/0/16",
+          "weight": 128.816386
+        },
+        {
+          "id": "Impish:248/0/136/0/124/0",
+          "weight": 35.94619
+        },
+        {
+          "id": "Impish:248/0/252/0/8/0",
+          "weight": 18.43146
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gliscor",
+          "weight": 703.655509
+        },
+        {
+          "id": "Corviknight",
+          "weight": 693.377492
+        },
+        {
+          "id": "Dondozo",
+          "weight": 680.91344
+        },
+        {
+          "id": "Clodsire",
+          "weight": 679.079751
+        },
+        {
+          "id": "Blissey",
+          "weight": 448.48505
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "grass",
+          "weight": 413.70018
+        },
+        {
+          "id": "ghost",
+          "weight": 228.018791
+        },
+        {
+          "id": "steel",
+          "weight": 130.838784
+        },
+        {
+          "id": "fairy",
+          "weight": 32.117207
+        },
+        {
+          "id": "dark",
+          "weight": 9.459037
+        }
+      ]
+    },
+    {
+      "name": "Zapdos",
+      "usage": 6.50369,
+      "rawCount": 88847,
+      "abilities": [
+        {
+          "id": "static",
+          "weight": 782.54634
+        },
+        {
+          "id": "pressure",
+          "weight": 0.898826
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 386.879275
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 265.633222
+        },
+        {
+          "id": "choicespecs",
+          "weight": 127.243224
+        },
+        {
+          "id": "assaultvest",
+          "weight": 1.57677
+        },
+        {
+          "id": "leftovers",
+          "weight": 1.031981
+        }
+      ],
+      "moves": [
+        {
+          "id": "hurricane",
+          "weight": 780.371035
+        },
+        {
+          "id": "roost",
+          "weight": 652.719617
+        },
+        {
+          "id": "voltswitch",
+          "weight": 551.483435
+        },
+        {
+          "id": "thunderwave",
+          "weight": 351.549117
+        },
+        {
+          "id": "discharge",
+          "weight": 227.286777
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Bold:248/0/252/8/0/0",
+          "weight": 150.472643
+        },
+        {
+          "id": "Bold:248/0/252/0/8/0",
+          "weight": 145.11984
+        },
+        {
+          "id": "Bold:252/0/252/0/4/0",
+          "weight": 115.444262
+        },
+        {
+          "id": "Timid:4/0/0/252/0/252",
+          "weight": 113.897865
+        },
+        {
+          "id": "Bold:248/0/252/0/4/4",
+          "weight": 84.924951
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 553.551391
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 327.937592
+        },
+        {
+          "id": "Slowking-Galar",
+          "weight": 296.203527
+        },
+        {
+          "id": "Kyurem",
+          "weight": 250.307062
+        },
+        {
+          "id": "Ogerpon-Wellspring",
+          "weight": 247.715684
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "steel",
+          "weight": 216.091385
+        },
+        {
+          "id": "grass",
+          "weight": 135.085616
+        },
+        {
+          "id": "fire",
+          "weight": 131.881431
+        },
+        {
+          "id": "fairy",
+          "weight": 116.099157
+        },
+        {
+          "id": "water",
+          "weight": 94.720518
+        }
+      ]
+    },
+    {
+      "name": "Moltres",
+      "usage": 6.42825,
+      "rawCount": 63941,
+      "abilities": [
+        {
+          "id": "flamebody",
+          "weight": 767.147508
+        },
+        {
+          "id": "pressure",
+          "weight": 7.651118
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 734.523375
+        },
+        {
+          "id": "leftovers",
+          "weight": 22.116769
+        },
+        {
+          "id": "lifeorb",
+          "weight": 14.66002
+        },
+        {
+          "id": "choicespecs",
+          "weight": 2.508291
+        },
+        {
+          "id": "metronome",
+          "weight": 0.550821
+        }
+      ],
+      "moves": [
+        {
+          "id": "roost",
+          "weight": 748.002241
+        },
+        {
+          "id": "flamethrower",
+          "weight": 729.096034
+        },
+        {
+          "id": "roar",
+          "weight": 587.726638
+        },
+        {
+          "id": "willowisp",
+          "weight": 421.821258
+        },
+        {
+          "id": "uturn",
+          "weight": 353.162595
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Calm:248/0/16/8/208/28",
+          "weight": 142.504298
+        },
+        {
+          "id": "Bold:248/0/248/0/0/12",
+          "weight": 94.633481
+        },
+        {
+          "id": "Calm:248/0/0/0/248/12",
+          "weight": 82.058429
+        },
+        {
+          "id": "Bold:248/0/132/0/104/24",
+          "weight": 53.861099
+        },
+        {
+          "id": "Bold:248/0/104/0/144/12",
+          "weight": 46.364663
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Gliscor",
+          "weight": 265.705761
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 263.856101
+        },
+        {
+          "id": "Ting-Lu",
+          "weight": 259.696888
+        },
+        {
+          "id": "Ogerpon",
+          "weight": 228.275712
+        },
+        {
+          "id": "Dragonite",
+          "weight": 219.462614
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "fairy",
+          "weight": 376.460744
+        },
+        {
+          "id": "ice",
+          "weight": 146.599476
+        },
+        {
+          "id": "grass",
+          "weight": 109.657903
+        },
+        {
+          "id": "dragon",
+          "weight": 63.452226
+        },
+        {
+          "id": "ground",
+          "weight": 35.232339
+        }
+      ]
+    },
+    {
+      "name": "Deoxys-Speed",
+      "usage": 6.23481,
+      "rawCount": 67632,
+      "abilities": [
+        {
+          "id": "pressure",
+          "weight": 753.360227
+        }
+      ],
+      "items": [
+        {
+          "id": "lightclay",
+          "weight": 235.324623
+        },
+        {
+          "id": "lifeorb",
+          "weight": 229.776768
+        },
+        {
+          "id": "focussash",
+          "weight": 101.017623
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 52.403363
+        },
+        {
+          "id": "ejectpack",
+          "weight": 48.334817
+        }
+      ],
+      "moves": [
+        {
+          "id": "psychoboost",
+          "weight": 431.079565
+        },
+        {
+          "id": "taunt",
+          "weight": 412.208004
+        },
+        {
+          "id": "lightscreen",
+          "weight": 235.82634
+        },
+        {
+          "id": "reflect",
+          "weight": 235.803046
+        },
+        {
+          "id": "painsplit",
+          "weight": 214.638364
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:248/0/8/0/0/252",
+          "weight": 177.109436
+        },
+        {
+          "id": "Modest:0/0/0/252/4/252",
+          "weight": 153.995927
+        },
+        {
+          "id": "Timid:248/0/4/0/4/252",
+          "weight": 51.108663
+        },
+        {
+          "id": "Naive:0/200/0/252/0/56",
+          "weight": 36.735414
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 28.029403
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Zamazenta",
+          "weight": 293.654736
+        },
+        {
+          "id": "Ogerpon-Wellspring",
+          "weight": 291.107338
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 235.978049
+        },
+        {
+          "id": "Kingambit",
+          "weight": 212.471554
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 211.987349
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "fighting",
+          "weight": 271.2887
+        },
+        {
+          "id": "ghost",
+          "weight": 234.912959
+        },
+        {
+          "id": "psychic",
+          "weight": 61.148733
+        },
+        {
+          "id": "poison",
+          "weight": 52.701802
+        },
+        {
+          "id": "fairy",
+          "weight": 41.369234
+        }
+      ]
+    },
+    {
+      "name": "Iron Moth",
+      "usage": 5.9692,
+      "rawCount": 98085,
+      "abilities": [
+        {
+          "id": "quarkdrive",
+          "weight": 718.68969
+        }
+      ],
+      "items": [
+        {
+          "id": "boosterenergy",
+          "weight": 487.851956
+        },
+        {
+          "id": "choicespecs",
+          "weight": 163.1686
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 61.061633
+        },
+        {
+          "id": "airballoon",
+          "weight": 2.153852
+        },
+        {
+          "id": "assaultvest",
+          "weight": 1.415887
+        }
+      ],
+      "moves": [
+        {
+          "id": "fierydance",
+          "weight": 670.290555
+        },
+        {
+          "id": "sludgewave",
+          "weight": 634.597863
+        },
+        {
+          "id": "energyball",
+          "weight": 261.034709
+        },
+        {
+          "id": "dazzlinggleam",
+          "weight": 217.598651
+        },
+        {
+          "id": "substitute",
+          "weight": 193.898587
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/124/132/0/252",
+          "weight": 241.294758
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 190.50048
+        },
+        {
+          "id": "Timid:4/0/0/252/0/252",
+          "weight": 66.599955
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 49.833287
+        },
+        {
+          "id": "Timid:124/0/0/132/0/252",
+          "weight": 27.380938
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Kingambit",
+          "weight": 354.651764
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 352.639576
+        },
+        {
+          "id": "Hatterene",
+          "weight": 236.872011
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 206.059956
+        },
+        {
+          "id": "Raging Bolt",
+          "weight": 176.277965
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "fire",
+          "weight": 193.376871
+        },
+        {
+          "id": "fairy",
+          "weight": 176.139822
+        },
+        {
+          "id": "ghost",
+          "weight": 155.480157
+        },
+        {
+          "id": "grass",
+          "weight": 151.585023
+        },
+        {
+          "id": "dark",
+          "weight": 23.432241
+        }
+      ]
+    },
+    {
+      "name": "Primarina",
+      "usage": 5.51071,
+      "rawCount": 62594,
+      "abilities": [
+        {
+          "id": "liquidvoice",
+          "weight": 379.310966
+        },
+        {
+          "id": "torrent",
+          "weight": 282.775799
+        }
+      ],
+      "items": [
+        {
+          "id": "assaultvest",
+          "weight": 435.496996
+        },
+        {
+          "id": "leftovers",
+          "weight": 153.099055
+        },
+        {
+          "id": "choicespecs",
+          "weight": 53.381143
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 17.571499
+        },
+        {
+          "id": "mysticwater",
+          "weight": 0.770746
+        }
+      ],
+      "moves": [
+        {
+          "id": "psychicnoise",
+          "weight": 627.054239
+        },
+        {
+          "id": "moonblast",
+          "weight": 613.226626
+        },
+        {
+          "id": "flipturn",
+          "weight": 360.074882
+        },
+        {
+          "id": "whirlpool",
+          "weight": 353.603438
+        },
+        {
+          "id": "surf",
+          "weight": 223.944422
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Bold:248/0/204/0/56/0",
+          "weight": 174.673125
+        },
+        {
+          "id": "Modest:0/0/0/252/4/252",
+          "weight": 106.680381
+        },
+        {
+          "id": "Modest:248/0/0/208/52/0",
+          "weight": 53.043046
+        },
+        {
+          "id": "Modest:252/0/160/88/0/8",
+          "weight": 50.851284
+        },
+        {
+          "id": "Modest:80/0/0/252/0/176",
+          "weight": 32.729496
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Ogerpon",
+          "weight": 273.865065
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 268.064771
+        },
+        {
+          "id": "Ting-Lu",
+          "weight": 251.678205
+        },
+        {
+          "id": "Glimmora",
+          "weight": 246.219246
+        },
+        {
+          "id": "Kingambit",
+          "weight": 196.657077
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "poison",
+          "weight": 221.787221
+        },
+        {
+          "id": "fairy",
+          "weight": 106.028847
+        },
+        {
+          "id": "ghost",
+          "weight": 73.880562
+        },
+        {
+          "id": "ground",
+          "weight": 66.815492
+        },
+        {
+          "id": "bug",
+          "weight": 64.212938
+        }
+      ]
+    },
+    {
+      "name": "Iron Crown",
+      "usage": 5.14235,
+      "rawCount": 55203,
+      "abilities": [
+        {
+          "id": "quarkdrive",
+          "weight": 618.825547
+        }
+      ],
+      "items": [
+        {
+          "id": "boosterenergy",
+          "weight": 292.069268
+        },
+        {
+          "id": "choicespecs",
+          "weight": 208.94326
+        },
+        {
+          "id": "assaultvest",
+          "weight": 55.371037
+        },
+        {
+          "id": "weaknesspolicy",
+          "weight": 40.617856
+        },
+        {
+          "id": "choicescarf",
+          "weight": 15.020878
+        }
+      ],
+      "moves": [
+        {
+          "id": "tachyoncutter",
+          "weight": 553.01284
+        },
+        {
+          "id": "focusblast",
+          "weight": 536.999564
+        },
+        {
+          "id": "calmmind",
+          "weight": 332.794939
+        },
+        {
+          "id": "psychicnoise",
+          "weight": 301.901332
+        },
+        {
+          "id": "voltswitch",
+          "weight": 285.891277
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 245.665733
+        },
+        {
+          "id": "Timid:84/0/0/172/0/252",
+          "weight": 172.02865
+        },
+        {
+          "id": "Timid:248/0/12/12/64/168",
+          "weight": 39.961008
+        },
+        {
+          "id": "Timid:96/0/0/160/0/252",
+          "weight": 33.413666
+        },
+        {
+          "id": "Timid:80/0/0/252/0/176",
+          "weight": 28.884244
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Glimmora",
+          "weight": 195.617692
+        },
+        {
+          "id": "Ogerpon-Wellspring",
+          "weight": 170.714978
+        },
+        {
+          "id": "Samurott-Hisui",
+          "weight": 165.250348
+        },
+        {
+          "id": "Iron Valiant",
+          "weight": 136.462533
+        },
+        {
+          "id": "Dragonite",
+          "weight": 135.974107
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "steel",
+          "weight": 268.679797
+        },
+        {
+          "id": "fighting",
+          "weight": 255.655051
+        },
+        {
+          "id": "electric",
+          "weight": 42.727151
+        },
+        {
+          "id": "normal",
+          "weight": 20.938168
+        },
+        {
+          "id": "water",
+          "weight": 14.102571
+        }
+      ]
+    },
+    {
+      "name": "Tornadus-Therian",
+      "usage": 4.99125,
+      "rawCount": 54132,
+      "abilities": [
+        {
+          "id": "regenerator",
+          "weight": 601.999658
+        }
+      ],
+      "items": [
+        {
+          "id": "assaultvest",
+          "weight": 391.767041
+        },
+        {
+          "id": "lifeorb",
+          "weight": 129.450866
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 54.177479
+        },
+        {
+          "id": "choicespecs",
+          "weight": 17.034848
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 6.771788
+        }
+      ],
+      "moves": [
+        {
+          "id": "bleakwindstorm",
+          "weight": 587.579301
+        },
+        {
+          "id": "heatwave",
+          "weight": 489.718146
+        },
+        {
+          "id": "uturn",
+          "weight": 432.33733
+        },
+        {
+          "id": "knockoff",
+          "weight": 414.92076
+        },
+        {
+          "id": "nastyplot",
+          "weight": 156.47985
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:176/0/0/0/92/240",
+          "weight": 143.526152
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 128.45452
+        },
+        {
+          "id": "Timid:252/0/0/0/4/252",
+          "weight": 35.49587
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 28.617462
+        },
+        {
+          "id": "Timid:248/0/20/0/0/240",
+          "weight": 27.10476
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 284.412581
+        },
+        {
+          "id": "Iron Treads",
+          "weight": 207.312503
+        },
+        {
+          "id": "Hatterene",
+          "weight": 164.747552
+        },
+        {
+          "id": "Kyurem",
+          "weight": 159.612771
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 159.070532
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "steel",
+          "weight": 163.255237
+        },
+        {
+          "id": "water",
+          "weight": 130.211446
+        },
+        {
+          "id": "normal",
+          "weight": 60.974317
+        },
+        {
+          "id": "dark",
+          "weight": 53.429391
+        },
+        {
+          "id": "fairy",
+          "weight": 41.063925
+        }
+      ]
+    },
+    {
+      "name": "Garganacl",
+      "usage": 4.91786,
+      "rawCount": 82062,
+      "abilities": [
+        {
+          "id": "purifyingsalt",
+          "weight": 594.983486
+        },
+        {
+          "id": "sturdy",
+          "weight": 0.846376
+        },
+        {
+          "id": "clearbody",
+          "weight": 0.05093
+        }
+      ],
+      "items": [
+        {
+          "id": "leftovers",
+          "weight": 588.382243
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 4.435396
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 1.77771
+        },
+        {
+          "id": "redcard",
+          "weight": 1.081463
+        },
+        {
+          "id": "assaultvest",
+          "weight": 0.048641
+        }
+      ],
+      "moves": [
+        {
+          "id": "saltcure",
+          "weight": 595.845231
+        },
+        {
+          "id": "recover",
+          "weight": 594.437388
+        },
+        {
+          "id": "protect",
+          "weight": 456.045834
+        },
+        {
+          "id": "stealthrock",
+          "weight": 297.241452
+        },
+        {
+          "id": "curse",
+          "weight": 233.982854
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Careful:252/0/52/0/204/0",
+          "weight": 186.848603
+        },
+        {
+          "id": "Sassy:252/4/0/0/252/0",
+          "weight": 96.335902
+        },
+        {
+          "id": "Sassy:252/0/4/0/252/0",
+          "weight": 55.96767
+        },
+        {
+          "id": "Impish:248/0/180/0/80/0",
+          "weight": 41.330245
+        },
+        {
+          "id": "Careful:248/0/4/0/252/4",
+          "weight": 23.769908
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 282.23895
+        },
+        {
+          "id": "Slowking-Galar",
+          "weight": 228.407346
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 202.398041
+        },
+        {
+          "id": "Zapdos",
+          "weight": 194.507799
+        },
+        {
+          "id": "Rillaboom",
+          "weight": 167.886846
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "water",
+          "weight": 348.108313
+        },
+        {
+          "id": "fairy",
+          "weight": 183.023554
+        },
+        {
+          "id": "electric",
+          "weight": 26.595406
+        },
+        {
+          "id": "ghost",
+          "weight": 16.550031
+        },
+        {
+          "id": "fire",
+          "weight": 7.160473
+        }
+      ]
+    },
+    {
+      "name": "Walking Wake",
+      "usage": 4.56156,
+      "rawCount": 90036,
+      "abilities": [
+        {
+          "id": "protosynthesis",
+          "weight": 546.165204
+        }
+      ],
+      "items": [
+        {
+          "id": "choicespecs",
+          "weight": 216.359771
+        },
+        {
+          "id": "lifeorb",
+          "weight": 62.726226
+        },
+        {
+          "id": "boosterenergy",
+          "weight": 55.714347
+        },
+        {
+          "id": "choicescarf",
+          "weight": 53.512246
+        },
+        {
+          "id": "wiseglasses",
+          "weight": 50.454395
+        }
+      ],
+      "moves": [
+        {
+          "id": "dracometeor",
+          "weight": 488.043903
+        },
+        {
+          "id": "hydrosteam",
+          "weight": 391.774484
+        },
+        {
+          "id": "flipturn",
+          "weight": 258.134522
+        },
+        {
+          "id": "weatherball",
+          "weight": 232.329607
+        },
+        {
+          "id": "dragonpulse",
+          "weight": 194.25501
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 144.812978
+        },
+        {
+          "id": "Timid:12/0/0/244/0/252",
+          "weight": 89.207662
+        },
+        {
+          "id": "Timid:0/0/12/244/0/252",
+          "weight": 87.814566
+        },
+        {
+          "id": "Modest:0/0/4/252/0/252",
+          "weight": 56.300616
+        },
+        {
+          "id": "Timid:0/0/0/244/12/252",
+          "weight": 55.597314
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 362.836931
+        },
+        {
+          "id": "Ninetales",
+          "weight": 333.423092
+        },
+        {
+          "id": "Slither Wing",
+          "weight": 193.267367
+        },
+        {
+          "id": "Ceruledge",
+          "weight": 167.644416
+        },
+        {
+          "id": "Venusaur",
+          "weight": 150.197517
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "water",
+          "weight": 347.960992
+        },
+        {
+          "id": "fairy",
+          "weight": 83.33803
+        },
+        {
+          "id": "dragon",
+          "weight": 81.264322
+        },
+        {
+          "id": "steel",
+          "weight": 20.968819
+        },
+        {
+          "id": "fire",
+          "weight": 8.565082
+        }
+      ]
+    },
+    {
+      "name": "Hydreigon",
+      "usage": 4.33924,
+      "rawCount": 17298,
+      "abilities": [
+        {
+          "id": "levitate",
+          "weight": 519.381702
+        }
+      ],
+      "items": [
+        {
+          "id": "lifeorb",
+          "weight": 261.491927
+        },
+        {
+          "id": "leftovers",
+          "weight": 162.663127
+        },
+        {
+          "id": "choicespecs",
+          "weight": 70.109632
+        },
+        {
+          "id": "ejectpack",
+          "weight": 12.431405
+        },
+        {
+          "id": "loadeddice",
+          "weight": 5.030392
+        }
+      ],
+      "moves": [
+        {
+          "id": "darkpulse",
+          "weight": 492.657455
+        },
+        {
+          "id": "nastyplot",
+          "weight": 430.333094
+        },
+        {
+          "id": "earthpower",
+          "weight": 422.069547
+        },
+        {
+          "id": "dracometeor",
+          "weight": 362.292056
+        },
+        {
+          "id": "flashcannon",
+          "weight": 169.670018
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 331.4572
+        },
+        {
+          "id": "Timid:4/0/0/252/0/252",
+          "weight": 153.954982
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 21.925402
+        },
+        {
+          "id": "Naive:0/4/0/252/0/252",
+          "weight": 5.028916
+        },
+        {
+          "id": "Adamant:4/252/0/0/0/252",
+          "weight": 1.618852
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Zamazenta",
+          "weight": 453.291143
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 304.147182
+        },
+        {
+          "id": "Glimmora",
+          "weight": 293.529108
+        },
+        {
+          "id": "Rillaboom",
+          "weight": 280.197631
+        },
+        {
+          "id": "Ceruledge",
+          "weight": 264.141071
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "dragon",
+          "weight": 249.079689
+        },
+        {
+          "id": "ghost",
+          "weight": 146.1761
+        },
+        {
+          "id": "steel",
+          "weight": 104.816736
+        },
+        {
+          "id": "ground",
+          "weight": 15.475638
+        },
+        {
+          "id": "poison",
+          "weight": 2.894544
+        }
+      ]
+    },
+    {
+      "name": "Weezing-Galar",
+      "usage": 4.03562,
+      "rawCount": 61024,
+      "abilities": [
+        {
+          "id": "neutralizinggas",
+          "weight": 482.27612
+        },
+        {
+          "id": "levitate",
+          "weight": 5.048399
+        },
+        {
+          "id": "mistysurge",
+          "weight": 0.704826
+        }
+      ],
+      "items": [
+        {
+          "id": "heavydutyboots",
+          "weight": 313.825338
+        },
+        {
+          "id": "leftovers",
+          "weight": 141.504958
+        },
+        {
+          "id": "rockyhelmet",
+          "weight": 21.706436
+        },
+        {
+          "id": "shucaberry",
+          "weight": 3.906481
+        },
+        {
+          "id": "custapberry",
+          "weight": 1.900086
+        }
+      ],
+      "moves": [
+        {
+          "id": "willowisp",
+          "weight": 479.069907
+        },
+        {
+          "id": "defog",
+          "weight": 477.062679
+        },
+        {
+          "id": "painsplit",
+          "weight": 394.629842
+        },
+        {
+          "id": "sludgebomb",
+          "weight": 311.19063
+        },
+        {
+          "id": "protect",
+          "weight": 79.720281
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Bold:248/0/252/0/8/0",
+          "weight": 113.642607
+        },
+        {
+          "id": "Bold:252/0/252/0/4/0",
+          "weight": 82.469779
+        },
+        {
+          "id": "Bold:248/0/84/0/0/176",
+          "weight": 74.489294
+        },
+        {
+          "id": "Bold:252/0/244/0/0/12",
+          "weight": 47.927063
+        },
+        {
+          "id": "Bold:248/0/252/0/0/8",
+          "weight": 32.484113
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Corviknight",
+          "weight": 249.199606
+        },
+        {
+          "id": "Alomomola",
+          "weight": 223.438967
+        },
+        {
+          "id": "Ting-Lu",
+          "weight": 204.143877
+        },
+        {
+          "id": "Ogerpon",
+          "weight": 163.011043
+        },
+        {
+          "id": "Dondozo",
+          "weight": 124.19255
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "water",
+          "weight": 178.41455
+        },
+        {
+          "id": "grass",
+          "weight": 174.286674
+        },
+        {
+          "id": "ghost",
+          "weight": 83.839101
+        },
+        {
+          "id": "dragon",
+          "weight": 32.964474
+        },
+        {
+          "id": "steel",
+          "weight": 5.463628
+        }
+      ]
+    },
+    {
+      "name": "Heatran",
+      "usage": 3.86758,
+      "rawCount": 49208,
+      "abilities": [
+        {
+          "id": "flashfire",
+          "weight": 310.716962
+        },
+        {
+          "id": "flamebody",
+          "weight": 153.13404
+        }
+      ],
+      "items": [
+        {
+          "id": "leftovers",
+          "weight": 154.449844
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 128.941099
+        },
+        {
+          "id": "ejectpack",
+          "weight": 112.230244
+        },
+        {
+          "id": "airballoon",
+          "weight": 59.424103
+        },
+        {
+          "id": "choicescarf",
+          "weight": 4.960652
+        }
+      ],
+      "moves": [
+        {
+          "id": "earthpower",
+          "weight": 428.729991
+        },
+        {
+          "id": "stealthrock",
+          "weight": 406.13272
+        },
+        {
+          "id": "willowisp",
+          "weight": 289.226029
+        },
+        {
+          "id": "magmastorm",
+          "weight": 228.017131
+        },
+        {
+          "id": "taunt",
+          "weight": 135.115668
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Bold:248/0/140/0/0/120",
+          "weight": 101.425641
+        },
+        {
+          "id": "Calm:248/0/0/16/128/116",
+          "weight": 80.767967
+        },
+        {
+          "id": "Calm:248/0/0/0/128/132",
+          "weight": 27.681969
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 22.81493
+        },
+        {
+          "id": "Calm:248/0/84/16/112/48",
+          "weight": 20.791891
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 205.719219
+        },
+        {
+          "id": "Ogerpon-Wellspring",
+          "weight": 147.144177
+        },
+        {
+          "id": "Ting-Lu",
+          "weight": 113.575752
+        },
+        {
+          "id": "Hatterene",
+          "weight": 113.410518
+        },
+        {
+          "id": "Zamazenta",
+          "weight": 112.103328
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "grass",
+          "weight": 142.327326
+        },
+        {
+          "id": "ghost",
+          "weight": 125.238519
+        },
+        {
+          "id": "bug",
+          "weight": 87.453394
+        },
+        {
+          "id": "fairy",
+          "weight": 51.720762
+        },
+        {
+          "id": "normal",
+          "weight": 30.220919
+        }
+      ]
+    },
+    {
+      "name": "Tinkaton",
+      "usage": 3.61128,
+      "rawCount": 24380,
+      "abilities": [
+        {
+          "id": "pickpocket",
+          "weight": 251.023687
+        },
+        {
+          "id": "moldbreaker",
+          "weight": 179.497493
+        },
+        {
+          "id": "owntempo",
+          "weight": 0.12115
+        }
+      ],
+      "items": [
+        {
+          "id": "airballoon",
+          "weight": 356.962004
+        },
+        {
+          "id": "leftovers",
+          "weight": 72.388701
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 0.890938
+        },
+        {
+          "id": "lifeorb",
+          "weight": 0.15986
+        },
+        {
+          "id": "shucaberry",
+          "weight": 0.103804
+        }
+      ],
+      "moves": [
+        {
+          "id": "gigatonhammer",
+          "weight": 430.455378
+        },
+        {
+          "id": "stealthrock",
+          "weight": 429.079308
+        },
+        {
+          "id": "encore",
+          "weight": 427.15636
+        },
+        {
+          "id": "knockoff",
+          "weight": 160.781284
+        },
+        {
+          "id": "icehammer",
+          "weight": 158.276061
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 187.993317
+        },
+        {
+          "id": "Jolly:252/0/0/0/24/232",
+          "weight": 90.493701
+        },
+        {
+          "id": "Jolly:56/20/0/0/200/232",
+          "weight": 36.908857
+        },
+        {
+          "id": "Jolly:248/0/28/0/0/232",
+          "weight": 29.06571
+        },
+        {
+          "id": "Jolly:248/8/0/0/0/252",
+          "weight": 22.743428
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Great Tusk",
+          "weight": 222.288635
+        },
+        {
+          "id": "Samurott-Hisui",
+          "weight": 213.465331
+        },
+        {
+          "id": "Pecharunt",
+          "weight": 171.865831
+        },
+        {
+          "id": "Gliscor",
+          "weight": 159.516243
+        },
+        {
+          "id": "Sinistcha",
+          "weight": 123.832032
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 322.50667
+        },
+        {
+          "id": "water",
+          "weight": 73.24728
+        },
+        {
+          "id": "ice",
+          "weight": 22.460401
+        },
+        {
+          "id": "dark",
+          "weight": 9.838852
+        },
+        {
+          "id": "fairy",
+          "weight": 1.130866
+        }
+      ]
+    },
+    {
+      "name": "Blaziken",
+      "usage": 3.26161,
+      "rawCount": 42951,
+      "abilities": [
+        {
+          "id": "speedboost",
+          "weight": 392.888967
+        },
+        {
+          "id": "blaze",
+          "weight": 0.313973
+        }
+      ],
+      "items": [
+        {
+          "id": "lifeorb",
+          "weight": 344.40124
+        },
+        {
+          "id": "airballoon",
+          "weight": 14.744977
+        },
+        {
+          "id": "scopelens",
+          "weight": 13.26371
+        },
+        {
+          "id": "leftovers",
+          "weight": 10.826326
+        },
+        {
+          "id": "grassyseed",
+          "weight": 3.280189
+        }
+      ],
+      "moves": [
+        {
+          "id": "closecombat",
+          "weight": 391.430807
+        },
+        {
+          "id": "protect",
+          "weight": 347.959668
+        },
+        {
+          "id": "overheat",
+          "weight": 314.652266
+        },
+        {
+          "id": "knockoff",
+          "weight": 283.35397
+        },
+        {
+          "id": "flareblitz",
+          "weight": 74.550801
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Rash:0/4/0/252/0/252",
+          "weight": 308.788668
+        },
+        {
+          "id": "Adamant:4/252/0/0/0/252",
+          "weight": 30.793336
+        },
+        {
+          "id": "Jolly:0/252/4/0/0/252",
+          "weight": 14.180407
+        },
+        {
+          "id": "Adamant:0/252/4/0/0/252",
+          "weight": 11.995061
+        },
+        {
+          "id": "Adamant:104/252/0/0/0/152",
+          "weight": 7.462123
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Glimmora",
+          "weight": 286.584123
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 183.302657
+        },
+        {
+          "id": "Ogerpon",
+          "weight": 182.668873
+        },
+        {
+          "id": "Ting-Lu",
+          "weight": 180.617795
+        },
+        {
+          "id": "Primarina",
+          "weight": 167.284413
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "fire",
+          "weight": 326.322412
+        },
+        {
+          "id": "ghost",
+          "weight": 28.842971
+        },
+        {
+          "id": "fighting",
+          "weight": 21.872329
+        },
+        {
+          "id": "dark",
+          "weight": 7.394301
+        },
+        {
+          "id": "flying",
+          "weight": 5.802268
+        }
+      ]
+    },
+    {
+      "name": "Garchomp",
+      "usage": 3.24883,
+      "rawCount": 86667,
+      "abilities": [
+        {
+          "id": "roughskin",
+          "weight": 388.783905
+        }
+      ],
+      "items": [
+        {
+          "id": "rockyhelmet",
+          "weight": 263.890259
+        },
+        {
+          "id": "loadeddice",
+          "weight": 90.249323
+        },
+        {
+          "id": "lifeorb",
+          "weight": 19.561091
+        },
+        {
+          "id": "choiceband",
+          "weight": 6.750956
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 3.008063
+        }
+      ],
+      "moves": [
+        {
+          "id": "earthquake",
+          "weight": 386.397306
+        },
+        {
+          "id": "stealthrock",
+          "weight": 284.523345
+        },
+        {
+          "id": "dragontail",
+          "weight": 270.036188
+        },
+        {
+          "id": "spikes",
+          "weight": 257.206573
+        },
+        {
+          "id": "swordsdance",
+          "weight": 96.910247
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Impish:248/0/216/0/0/44",
+          "weight": 127.478367
+        },
+        {
+          "id": "Jolly:0/252/0/0/4/252",
+          "weight": 38.853785
+        },
+        {
+          "id": "Impish:252/0/216/0/0/40",
+          "weight": 38.383231
+        },
+        {
+          "id": "Jolly:4/252/0/0/0/252",
+          "weight": 26.821412
+        },
+        {
+          "id": "Jolly:0/252/4/0/0/252",
+          "weight": 23.563411
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Kingambit",
+          "weight": 195.570081
+        },
+        {
+          "id": "Ogerpon",
+          "weight": 162.172021
+        },
+        {
+          "id": "Cresselia",
+          "weight": 146.838873
+        },
+        {
+          "id": "Dragapult",
+          "weight": 129.007087
+        },
+        {
+          "id": "Gholdengo",
+          "weight": 114.520147
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 285.760964
+        },
+        {
+          "id": "fire",
+          "weight": 34.500516
+        },
+        {
+          "id": "flying",
+          "weight": 15.198129
+        },
+        {
+          "id": "ground",
+          "weight": 13.161988
+        },
+        {
+          "id": "poison",
+          "weight": 12.604943
+        }
+      ]
+    },
+    {
+      "name": "Ninetales",
+      "usage": 3.05874,
+      "rawCount": 40311,
+      "abilities": [
+        {
+          "id": "drought",
+          "weight": 365.450446
+        },
+        {
+          "id": "flashfire",
+          "weight": 0.026523
+        }
+      ],
+      "items": [
+        {
+          "id": "heatrock",
+          "weight": 365.1253
+        },
+        {
+          "id": "choicespecs",
+          "weight": 0.211075
+        },
+        {
+          "id": "choicescarf",
+          "weight": 0.086128
+        },
+        {
+          "id": "focussash",
+          "weight": 0.02545
+        },
+        {
+          "id": "heavydutyboots",
+          "weight": 0.005815
+        }
+      ],
+      "moves": [
+        {
+          "id": "encore",
+          "weight": 362.987039
+        },
+        {
+          "id": "healingwish",
+          "weight": 341.130643
+        },
+        {
+          "id": "overheat",
+          "weight": 311.281024
+        },
+        {
+          "id": "willowisp",
+          "weight": 259.32588
+        },
+        {
+          "id": "scorchingsands",
+          "weight": 84.233415
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/52/204/0/252",
+          "weight": 113.563043
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 59.605777
+        },
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 32.96372
+        },
+        {
+          "id": "Timid:192/0/0/72/0/244",
+          "weight": 31.797656
+        },
+        {
+          "id": "Timid:248/0/0/8/0/252",
+          "weight": 25.590449
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Walking Wake",
+          "weight": 333.423092
+        },
+        {
+          "id": "Great Tusk",
+          "weight": 325.614022
+        },
+        {
+          "id": "Ceruledge",
+          "weight": 162.137895
+        },
+        {
+          "id": "Venusaur",
+          "weight": 144.722488
+        },
+        {
+          "id": "Slither Wing",
+          "weight": 130.874063
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "ghost",
+          "weight": 229.9276
+        },
+        {
+          "id": "fire",
+          "weight": 69.718086
+        },
+        {
+          "id": "fairy",
+          "weight": 40.250495
+        },
+        {
+          "id": "grass",
+          "weight": 15.136619
+        },
+        {
+          "id": "flying",
+          "weight": 5.355004
+        }
+      ]
+    },
+    {
+      "name": "Latias",
+      "usage": 2.49629,
+      "rawCount": 16230,
+      "abilities": [
+        {
+          "id": "levitate",
+          "weight": 305.125977
+        }
+      ],
+      "items": [
+        {
+          "id": "weaknesspolicy",
+          "weight": 103.734117
+        },
+        {
+          "id": "souldew",
+          "weight": 93.767487
+        },
+        {
+          "id": "leftovers",
+          "weight": 58.710905
+        },
+        {
+          "id": "choicescarf",
+          "weight": 30.570139
+        },
+        {
+          "id": "keeberry",
+          "weight": 10.315657
+        }
+      ],
+      "moves": [
+        {
+          "id": "calmmind",
+          "weight": 183.74641
+        },
+        {
+          "id": "storedpower",
+          "weight": 177.763014
+        },
+        {
+          "id": "recover",
+          "weight": 169.137446
+        },
+        {
+          "id": "aurasphere",
+          "weight": 165.900644
+        },
+        {
+          "id": "dracometeor",
+          "weight": 124.577751
+        }
+      ],
+      "spreads": [
+        {
+          "id": "Timid:0/0/4/252/0/252",
+          "weight": 94.227656
+        },
+        {
+          "id": "Modest:4/0/252/252/0/0",
+          "weight": 88.029193
+        },
+        {
+          "id": "Bold:252/0/252/0/0/4",
+          "weight": 44.036996
+        },
+        {
+          "id": "Timid:0/0/0/252/4/252",
+          "weight": 15.546762
+        },
+        {
+          "id": "Modest:0/0/0/252/4/252",
+          "weight": 14.588281
+        }
+      ],
+      "teammates": [
+        {
+          "id": "Heatran",
+          "weight": 109.842435
+        },
+        {
+          "id": "Ninetales-Alola",
+          "weight": 88.423939
+        },
+        {
+          "id": "Maushold",
+          "weight": 86.821989
+        },
+        {
+          "id": "Klefki",
+          "weight": 86.720818
+        },
+        {
+          "id": "Okidogi",
+          "weight": 86.354738
+        }
+      ],
+      "teraTypes": [
+        {
+          "id": "steel",
+          "weight": 218.928777
+        },
+        {
+          "id": "poison",
+          "weight": 61.332785
+        },
+        {
+          "id": "fairy",
+          "weight": 12.295244
+        },
+        {
+          "id": "electric",
+          "weight": 8.526522
+        },
+        {
+          "id": "dragon",
+          "weight": 3.714754
+        }
+      ]
+    }
+  ]
+}
