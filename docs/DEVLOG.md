@@ -4,6 +4,131 @@ This log records what was built, what was learned, important decisions, and the
 next experiment. Entries focus on engineering reasoning rather than repeating
 the commit history.
 
+## September 3, 2026 — Milestone 4: Validated EV Spread Parser
+
+### Goal
+
+Convert Smogon spread identifiers into structured data that future speed and
+damage calculations can use safely.
+
+### What I Built
+
+* Parsed Smogon identifiers containing a nature and six EV values
+* Represented EVs as named HP, Attack, Defense, Special Attack, Special Defense,
+  and Speed fields
+* Required exactly one nature section and one EV section
+* Rejected missing, blank, fractional, and non-numeric EV values
+* Enforced the legal range of zero through 252 EVs per stat
+* Enforced the total limit of 510 EVs
+* Added focused tests for valid data, malformed formats, legal boundaries, and
+  illegal values
+
+### What I Learned
+
+* A TypeScript tuple assertion does not validate array length at runtime
+* External strings must be checked before their values are trusted
+* JavaScript converts an empty string to zero with `Number("")`, so blank input
+  needs an explicit validation rule
+* Boundary tests should prove both sides of a rule: 510 EVs is valid, while a
+  total above 510 is invalid
+* Validation order determines which error users receive
+
+### Challenges
+
+* A parser that destructured `split(":")` silently ignored additional sections
+* Early versions returned `undefined` fields instead of rejecting incomplete
+  spreads
+* Source code accidentally pasted into the terminal was interpreted as shell
+  commands, reinforcing the separation between the editor and command line
+* The feature branch initially inherited old squash-merged history and had to
+  be rebased onto the current remote `main`
+
+### Engineering Decisions
+
+#### Keep EV values in a nested object
+
+The parsed result separates the nature from a named `evs` object. This structure
+is clearer than positional values and provides a useful boundary for future
+Pokémon stat and damage-calculation code.
+
+#### Validate the fixed string format manually
+
+The spread identifier has a small, fixed grammar. Explicit checks keep the
+behavior and error messages visible without introducing another schema for one
+compact string.
+
+### Validation
+
+* Seven focused spread-parser tests pass
+* All 24 repository tests pass
+* The production build completes successfully
+* Lint and staged whitespace checks pass
+
+### Next Milestone
+
+Combine parsed EVs with base stats, IVs, level, and nature modifiers to calculate
+real Speed values and compare common metagame benchmarks.
+
+## September 3, 2026 — Milestone 3: Common-Set Profiles
+
+### Goal
+
+Turn normalized Smogon weighted fields into deterministic baseline profiles for
+move-level and set-level analysis.
+
+### What I Built
+
+* Selected the highest-weight ability and item for each Pokémon
+* Selected the four highest-weight moves
+* Selected the highest-weight spread and Tera type
+* Added alphabetical tie-breaking for equal weights
+* Returned explicit null values when optional categories are empty
+* Preserved the imported source data by sorting copied arrays
+* Added tests for selection, ties, missing options, and immutability
+
+### What I Learned
+
+* Stable output requires an explicit tie-breaking rule
+* Array sorting mutates its input unless the array is copied first
+* Passing tests may still contain callbacks or expressions that never execute
+* Linting can expose false-positive tests and dead code
+* Rebase and `--force-with-lease` can safely repair feature-branch history after
+  a squash merge
+
+### Challenges
+
+* The first implementation applied alphabetical tie-breaking to single options
+  but not to moves
+* Two tests initially appeared to pass even though misplaced parentheses kept
+  their assertion callbacks from running
+* A shallow object copy could not detect mutation of nested arrays, so the test
+  needed `structuredClone`
+
+### Engineering Decisions
+
+#### Describe the output as a marginal profile
+
+Smogon provides independent weighted distributions for moves, items, abilities,
+spreads, and Tera types. Selecting the most common value from each distribution
+does not prove those choices appeared together on a real set.
+
+#### Use one shared ordering rule
+
+All weighted options use the same descending-weight and alphabetical-tie
+comparator. This prevents categories from developing inconsistent selection
+behavior.
+
+### Validation
+
+* Four focused common-profile tests pass
+* All 17 repository tests pass
+* The production build and lint checks pass
+* The implementation does not mutate imported data
+
+### Next Milestone
+
+Parse Smogon EV spread identifiers into validated, structured values.
+
 ## September 1, 2026 — Milestone 2: Reproducible Data Importer
 
 ### Goal
