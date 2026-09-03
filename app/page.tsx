@@ -31,11 +31,18 @@ import {
   analyze,
   BULKY_TEAM,
   DEFAULT_TEAM,
+  META_SOURCE,
   POKEMON,
   REQUIRED_ROLES,
   TYPE_COLORS,
   type PokemonType,
 } from "./meta-engine";
+
+const META_PERIOD = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(new Date(`${META_SOURCE.period}-01T00:00:00Z`));
 
 function scoreTone(score: number) {
   if (score >= 80) {
@@ -131,7 +138,8 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-slate-300">
             <span className="size-2 rounded-full bg-lime-300 shadow-[0_0_10px_#bef264]" />
-            July 2026 · 1695 ladder · 654,262 battles
+            {META_PERIOD} · {META_SOURCE.cutoff} ladder ·{" "}
+            {META_SOURCE.battles.toLocaleString("en-US")} battles
           </div>
         </div>
       </header>
@@ -507,32 +515,33 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-[0.72fr_1.28fr]">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-lime-300">
-                  Lab notes · Milestone 1
+                  Lab notes · Milestone 2
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-                  Why this is explainable AI
+                  Why the data pipeline is trustworthy
                 </h2>
                 <p className="mt-3 text-sm leading-6 text-slate-400">
-                  Every result can be traced to data and a formula. An LLM can
-                  explain these results later, but it should not invent them.
+                  The app scores a compact snapshot generated from a pinned,
+                  validated Smogon archive. Source identity and integrity stay
+                  attached to the output.
                 </p>
               </div>
               <ol className="grid gap-3 sm:grid-cols-3">
                 {[
                   {
                     icon: Database,
-                    title: "1. Observe",
-                    copy: "Weight threats by real 1695-ladder usage.",
+                    title: "1. Validate",
+                    copy: "Reject malformed or mismatched upstream data.",
                   },
                   {
                     icon: Zap,
-                    title: "2. Score",
-                    copy: "Combine direct checks, typing, and team roles.",
+                    title: "2. Normalize",
+                    copy: "Extract usage, sets, spreads, and teammates.",
                   },
                   {
                     icon: ArrowRightLeft,
-                    title: "3. Search",
-                    copy: "Try every one-slot swap and keep improvements.",
+                    title: "3. Score",
+                    copy: `Weight threats by real ${META_SOURCE.cutoff}-ladder usage.`,
                   },
                 ].map((step) => (
                   <li
@@ -549,8 +558,8 @@ export default function Home() {
               </ol>
             </div>
             <div className="mt-6 flex items-center gap-2 border-t border-white/10 pt-5 text-sm text-slate-500">
-              Next: ingest Smogon chaos JSON, model common sets, then score
-              move-level matchups.
+              Next: convert imported moves, items, abilities, and spreads into
+              common sets, then score move-level matchups.
               <ChevronRight className="size-4 shrink-0 text-lime-300" />
             </div>
           </article>
@@ -562,7 +571,9 @@ export default function Home() {
           Unofficial fan project. Pokémon names belong to their respective
           owners.
         </p>
-        <p>Data: Smogon July 2026 Gen 9 OU, 1695 cutoff</p>
+        <p>
+          Data: Smogon {META_PERIOD} Gen 9 OU, {META_SOURCE.cutoff} cutoff
+        </p>
       </footer>
     </main>
   );

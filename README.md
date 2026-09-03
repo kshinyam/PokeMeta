@@ -19,8 +19,11 @@ development.
 ## Current Features
 
 - Interactive six-Pokémon Smogon OU team builder
-- July 2026 usage-weighted metagame snapshot
-- Analysis of the top 15 threats at the 1695 ladder cutoff
+- Reproducible Smogon chaos JSON importer with boundary validation
+- July 2026 normalized dataset containing the top 50 Pokémon and common sets
+- Analysis of the top 15 threats at the 1825 ladder cutoff
+- Source URL, publication time, battle count, and SHA-256 provenance
+- Extracted moves, items, abilities, spreads, Tera types, and teammates
 - Required-role detection for hazards, removal, speed, offense, pivoting,
   recovery, and win conditions
 - Defensive resilience analysis across all 18 attacking types
@@ -75,13 +78,28 @@ live-data and ML components can be introduced without rewriting the product.
 
 More detail is available in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
-## Data Source
+## Data Pipeline
 
-The seed dataset uses Smogon's July 2026 Generation 9 OU statistics at the 1695
-rating cutoff:
+The application snapshot is generated from Smogon's July 2026 Generation 9 OU
+chaos statistics at the 1825 rating cutoff:
 
-- <https://www.smogon.com/stats/2026-07/gen9ou-1695.txt>
-- <https://www.smogon.com/stats/2026-07/chaos/gen9ou-1695.json.gz>
+- <https://www.smogon.com/stats/2026-07/chaos/gen9ou-1825.json.gz>
+
+Refresh the pinned snapshot with:
+
+~~~bash
+npm run data:import -- --period 2026-07 --format gen9ou --cutoff 1825
+~~~
+
+The importer downloads the compressed archive, validates its identity and
+schema, records a SHA-256 digest, sorts usage deterministically, extracts the
+five highest-weighted set details, and writes the top 50 records to
+`data/smogon/`. The scoring engine consumes that normalized file rather than
+depending directly on Smogon's upstream structure.
+
+For an offline input, provide both `--input` and an explicit `--retrieved-at`.
+Requiring the timestamp prevents a local build from silently producing
+different metadata on every run.
 
 Pokémon names and related properties belong to their respective owners. This is
 an unofficial fan project.
@@ -121,7 +139,9 @@ npm test
 ## Current Limitations
 
 - Several hard and soft matchup classifications are currently curated
-- Moves, items, abilities, EVs, natures, and Tera types are not modeled
+- Imported moves, items, abilities, spreads, teammates, and Tera types are not
+  yet used by the matchup score
+- Dataset refreshes are manual and pinned rather than scheduled
 - Type-based fallback scoring cannot represent every battle interaction
 - The candidate pool is limited
 - Recommendations are not yet validated against replay outcomes
@@ -132,8 +152,9 @@ assumptions is part of the project's design.
 
 ## Roadmap
 
-- [ ] Import and normalize Smogon chaos JSON automatically
-- [ ] Extract common moves, items, abilities, Tera types, and spreads
+- [x] Import and normalize Smogon chaos JSON automatically
+- [x] Extract common moves, items, abilities, Tera types, spreads, and teammates
+- [ ] Convert weighted fields into human-readable common sets
 - [ ] Support Pokémon Showdown team import and export
 - [ ] Integrate move-level damage calculations
 - [ ] Add automatic EV benchmark optimization
