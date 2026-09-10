@@ -4,6 +4,91 @@ This log records what was built, what was learned, important decisions, and the
 next experiment. Entries focus on engineering reasoning rather than repeating
 the commit history.
 
+## September 10, 2026 — Milestone 8: Raw Speed Comparison
+
+### Goal
+
+Compare a candidate Pokémon's raw Speed with a metagame threat and report whether the candidate is faster, slower, or tied.
+
+### What I Built
+
+* Added `compareRawSpeed` as a deterministic raw-Speed comparison function
+* Added `faster`, `slower`, and `tied` outcomes
+* Calculated a signed Speed margin using `candidateSpeed - threatSpeed`
+* Added runtime validation requiring both Speed values to be positive whole numbers
+* Added role-specific validation errors for candidate and threat inputs
+* Returned both input values, the comparison outcome, and the signed margin
+* Added tests for every outcome, invalid inputs, the lowest valid boundary, and input immutability
+
+### What I Learned
+
+* A signed margin communicates both which Pokémon is faster and the size of the difference
+* A positive margin favors the candidate, a negative margin favors the threat, and zero represents a raw-Speed tie
+* Raw Speed does not guarantee move order because battle conditions and other mechanics can change which Pokémon acts first
+* Speed ties require separate resolution and should not be presented as either Pokémon being faster
+* Role-specific error messages make it easier to identify which input caused a failure
+* Tests should cover every conditional branch even when the implementation appears straightforward
+* A pure function does not mutate its input, making it safer to reuse across many matchup calculations
+
+### Challenges
+
+* The initial implementation covered all three outcomes, but only the `faster` branch had a test
+* Runtime validation was added through the TDD red-green process: the new validation tests failed first and passed after the checks were implemented
+* Replacing the implementation accidentally appended a second copy of the helper function
+* Node reported that `assertPositiveWholeNumber` had already been declared, which helped identify the duplicate
+* Because the file had already been staged, it needed to be staged again after the corrected version was saved
+
+### Engineering Decisions
+
+#### Use a candidate-centric signed margin
+
+The comparison calculates:
+
+`speedMargin = candidateSpeed - threatSpeed`
+
+This preserves more information than an absolute difference. A margin of `2` means the candidate is two points faster, while a margin of `-15` means it is fifteen points slower.
+
+The direction and magnitude can both be used by future AMS calculations and explanations.
+
+#### Compare raw Speed without claiming move order
+
+The function reports only the relationship between two raw Speed values. It does not claim which Pokémon will act first.
+
+Move priority, items, abilities, weather, Tailwind, paralysis, stat stages, Trick Room, and Speed-tie resolution require battle context and belong in later layers.
+
+#### Validate each role separately
+
+Candidate and threat Speed values are validated independently. Their error messages identify the role that received invalid data instead of returning a generic Speed error.
+
+This will make debugging easier and allow a future interface to explain exactly which Pokémon or set needs correction.
+
+#### Preserve input immutability
+
+The comparison reads the input object and returns a new result without modifying the original values.
+
+This pure-function design makes the comparator predictable and safe to reuse while evaluating many candidate-versus-threat matchups.
+
+### Validation
+
+* Seven focused raw-Speed comparison tests pass
+* All 48 repository tests pass
+* The production build completes successfully
+* Lint and whitespace checks pass
+* Pull request #20 was reviewed and squash-merged
+* Issue #19 closed automatically
+
+### How This Helps the Anti-Meta Score
+
+The engine can now determine whether a candidate clears the raw Speed benchmark of a highly used metagame threat and report the exact surplus or deficit.
+
+This creates a measurable component of matchup effectiveness without presenting it as a predicted win rate.
+
+The signed margin can eventually support EV optimization. The engine could search for the smallest Speed investment that produces a positive margin against an important threat, then allocate the remaining EVs to bulk or offensive stats.
+
+### Next Milestone
+
+Find the minimum Speed EV investment needed for a candidate to exceed a target raw Speed benchmark. The result should report the required EV investment, resulting Speed, and Speed margin, or explain when the target cannot be exceeded.
+
 ## September 10, 2026 — Milestones 6–7: Nature Resolution and Explainable Speed Integration
 
 ### Goal
