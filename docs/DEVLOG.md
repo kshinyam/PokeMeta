@@ -4,6 +4,92 @@ This log records what was built, what was learned, important decisions, and the
 next experiment. Entries focus on engineering reasoning rather than repeating
 the commit history.
 
+## September 9, 2026 — Milestone 5: Validated Speed Stat Calculator
+
+### Goal
+
+Calculate trustworthy unmodified Speed values that can eventually be used to
+compare competitive Pokémon sets against metagame threats.
+
+### What I Built
+
+* Added a typed Speed-calculation input containing Base Speed, IVs, EVs, level,
+  and a nature modifier
+* Implemented the Pokémon Speed formula with the correct intermediate rounding
+* Converted every complete four EVs into one stat point
+* Supported increasing, neutral, and decreasing nature modifiers
+* Added runtime validation for every input
+* Added tests using Garchomp and Regieleki Speed benchmarks
+* Added tests for EV rounding, nature modifiers, invalid inputs, and legal
+  boundaries
+
+### What I Learned
+
+* TypeScript types are removed at runtime and cannot validate imported JSON,
+  JavaScript calls, API responses, or user input
+* Runtime validation is still required at system boundaries even when a function
+  has strongly typed parameters
+* Range validation and enumeration validation represent different rules
+* Incomplete groups of four EVs do not contribute a stat point
+* Tests should cover valid boundaries as well as invalid values
+* A parser may report where it finally failed rather than where the original
+  syntax mistake occurred
+
+### Challenges
+
+* An extra closing brace ended the calculation function early and left part of
+  the implementation at the top level
+* Node reported the final brace even though the structural mistake occurred
+  earlier in the file
+* The first benchmark tests did not prove that incomplete EV groups were rounded
+  correctly
+* The test suite needed a level-99 case to distinguish the correct EV-rounding
+  order from a plausible incorrect implementation
+
+### Engineering Decisions
+
+#### Calculate unmodified Speed separately
+
+The calculator handles only Base Speed, IVs, EVs, level, and nature. Items,
+abilities, stat stages, status, weather, and Tailwind require battle context and
+will belong to a later effective-Speed layer.
+
+Trick Room belongs to action-order logic because it changes which Pokémon moves
+first without changing the underlying Speed stat.
+
+#### Keep Base Speed adaptable
+
+Base Speed must be a positive whole number, but the calculator does not hardcode
+Regieleki's current Base Speed as a permanent maximum. This keeps the function
+usable with future Pokémon and custom formats.
+
+#### Validate at runtime
+
+The function validates values even though it uses TypeScript. External data can
+bypass compile-time types, so runtime checks prevent invalid values from silently
+producing misleading matchup results.
+
+### Validation
+
+* Ten focused Speed-calculator tests pass
+* All 34 repository tests pass
+* The production build completes successfully
+* Lint and whitespace checks pass
+* Pull request #12 was reviewed and squash-merged
+* Issue #10 closed automatically
+
+### How This Helps the Anti-Meta Score
+
+Calculated Speed allows the engine to compare a candidate set with important
+metagame threats and determine whether it reaches the required Speed tier. This
+supports role and matchup-effectiveness analysis without presenting the result
+as a predicted win rate.
+
+### Next Milestone
+
+Resolve nature names such as Timid, Jolly, Brave, and Quiet into Speed modifiers,
+then connect parsed Smogon spreads to the Speed calculator.
+
 ## September 3, 2026 — Milestone 4: Validated EV Spread Parser
 
 ### Goal
