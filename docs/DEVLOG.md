@@ -4,6 +4,102 @@ This log records what was built, what was learned, important decisions, and the
 next experiment. Entries focus on engineering reasoning rather than repeating
 the commit history.
 
+## September 10, 2026 — Milestone 9: Minimum Speed EV Optimizer
+
+### Goal
+
+Find the smallest effective Speed EV investment that allows a candidate Pokémon to exceed a target raw Speed benchmark.
+
+### What I Built
+
+* Added `findMinimumSpeedEv` as a bounded optimization function
+* Evaluated Speed EV investments from 0 through 252
+* Increased the search by four EVs at a time
+* Returned immediately when the first positive Speed margin was found
+* Returned zero EVs when the candidate already exceeded the threat without investment
+* Treated a raw-Speed tie as insufficient because the optimization goal is to exceed the benchmark
+* Returned maximum-investment evidence when the benchmark could not be exceeded
+* Reused `calculateSpeedStat` and `compareRawSpeed` instead of duplicating their calculations or validation
+* Modeled attainable and unattainable results with a TypeScript discriminated union
+* Added tests for successful, unattainable, boundary, validation, and immutability behavior
+
+### What I Learned
+
+* Searching EV investments in ascending order guarantees that the first successful value is the minimum tested investment
+* Every four Speed EVs increases the EV contribution used by the stat formula by one
+* The final Speed stat may not increase every four EVs because level and nature introduce additional rounding
+* A valid optimization can produce no solution without indicating that the input was invalid
+* An unattainable result should contain evidence explaining what happened at maximum investment
+* A discriminated union connects related properties and prevents contradictory result states
+* A loop’s initial condition determines whether its body runs at all
+* Reusing smaller trusted functions makes a larger optimizer easier to verify and maintain
+
+### Challenges
+
+* The first implementation checked for success only inside a `while` loop
+* When the candidate was already faster at zero EVs, the loop condition was false and the loop ran zero times
+* This caused a valid zero-EV solution to be incorrectly reported as unattainable
+* The issue was a skipped loop rather than an infinite loop
+* Refactoring to a bounded `for` loop allowed zero EVs and every later investment to follow the same calculation path
+* The first refactor left the old zero-EV calculation above the new loop, creating unused and shadowed variables
+* Removing the obsolete calculation made the bounded loop the single source of truth
+* The original result type allowed impossible combinations such as `attainable: true` with `requiredSpeedEv: null`
+
+### Engineering Decisions
+
+#### Search effective EV investments in ascending order
+
+The optimizer evaluates:
+
+`0, 4, 8, ... 252`
+
+Starting at zero prevents unnecessary investment when the candidate already clears the benchmark. Searching in ascending order means the first successful value is the smallest effective investment considered by the system.
+
+#### Require a positive Speed margin
+
+The candidate must have a raw Speed strictly greater than the threat. A tie does not satisfy the optimization objective because it does not establish a raw-Speed advantage.
+
+This does not claim that the candidate will move first in battle. Priority, battle effects, and Speed-tie resolution remain outside this layer.
+
+#### Return an explicit unattainable result
+
+An unattainable benchmark is a valid optimization outcome rather than an exception. The inputs may all be valid even when the candidate cannot become faster at 252 Speed EVs.
+
+The result therefore includes the candidate’s maximum raw Speed and its signed margin against the threat. This gives callers evidence they can display or use in later analysis.
+
+#### Use a discriminated union
+
+When `attainable` is `true`, `requiredSpeedEv` must be a number. When `attainable` is `false`, `requiredSpeedEv` must be `null`.
+
+This prevents contradictory states at compile time and makes the result safer for other parts of the application to consume.
+
+#### Preserve validation ownership
+
+The optimizer does not duplicate validation rules from its dependencies. `calculateSpeedStat` validates Base Speed, IVs, level, EVs, and the nature modifier. `compareRawSpeed` validates the calculated candidate Speed and target threat Speed.
+
+The optimizer is responsible only for search order, termination, and result construction.
+
+### Validation
+
+* Six focused minimum-Speed-EV tests pass
+* All 54 repository tests pass
+* The production build completes successfully
+* Lint and whitespace checks pass
+* Pull request #23 was reviewed and squash-merged
+* Issue #22 closed automatically
+
+### How This Helps the Anti-Meta Score
+
+PokeMeta can now determine the least raw Speed investment needed to exceed a specific metagame benchmark.
+
+Instead of automatically recommending 252 Speed EVs, the system can preserve unused EVs for offensive power or defensive bulk. The returned values also provide an auditable explanation of the recommendation, including the required investment, resulting Speed, and signed margin.
+
+This is a targeted optimization result, not a predicted battle win rate. It currently excludes priority, items, abilities, weather, Tailwind, paralysis, stat stages, Trick Room, and other battle-context effects.
+
+### Next Milestone
+
+Resolve a Pokémon name into canonical species data, including typing and base stats. This will remove the need to enter Base Speed manually and establish the data foundation required for type-aware and damage-aware matchup analysis.
+
 ## September 10, 2026 — Milestone 8: Raw Speed Comparison
 
 ### Goal
