@@ -4,6 +4,113 @@ This log records what was built, what was learned, important decisions, and the
 next experiment. Entries focus on engineering reasoning rather than repeating
 the commit history.
 
+## September 10, 2026 — Milestones 6–7: Nature Resolution and Explainable Speed Integration
+
+### Goal
+
+Convert Smogon nature names and EV spread identifiers into trustworthy raw
+Speed benchmarks that can be explained and used in future matchup analysis.
+
+### What I Built
+
+* Added `getSpeedNatureModifier` to translate all 25 canonical Pokémon natures
+  into their Speed modifiers
+* Returns `1.1` for Speed-increasing natures, `0.9` for Speed-decreasing
+  natures, and `1` for confirmed Speed-neutral natures
+* Rejects unknown or malformed nature names instead of silently treating them
+  as neutral
+* Added `calculateSmogonSpreadSpeed` to connect the spread parser, nature
+  resolver, and Speed calculator
+* Returns the parsed nature, nature modifier, Speed EV investment, and
+  calculated Speed as an explainable result
+* Preserves validation errors from the module responsible for each rule
+
+### What I Learned
+
+* Speed IVs should remain explicit because some competitive sets intentionally
+  use values other than 31, especially sets designed to be slower
+* Level should remain explicit because different competitive formats may use
+  different levels
+* An integration layer translates between module interfaces without duplicating
+  their internal logic
+* `input.speedIv` contains the value used by the integration API, while `iv` is
+  the property name required by `calculateSpeedStat`
+* The spread parser returns the Speed EV investment as `parsed.evs.spe`, so the
+  integration layer converts it into the calculator's `ev` input
+* Runtime ES module imports require complete file paths such as
+  `./speed-stat.ts`
+* Type-only imports are removed before execution, so they do not produce the
+  same runtime module-resolution requirements
+* An integration function should allow validation errors to propagate when it
+  cannot recover from them
+
+### Challenges
+
+* The first implementation passed `speedIv` and `speedEv` as properties to
+  `calculateSpeedStat`, even though the calculator expects `iv` and `ev`
+* I initially tried to read `parsed.speedEv`, but the parser stores that value
+  inside `parsed.evs.spe`
+* Node could not resolve the integration module's runtime imports until the
+  `.ts` extensions were included
+* Linting did not detect the module-resolution problem because static-analysis
+  tools and Node's runtime resolver perform different checks
+
+### Engineering Decisions
+
+#### Keep format-dependent values explicit
+
+The integration requires Base Speed, Speed IV, and level as inputs. Base Speed
+and Speed IV are not included in the Smogon spread identifier, and level can
+vary by format. Avoiding hidden defaults prevents the system from calculating a
+valid-looking Speed value from incorrect assumptions.
+
+#### Preserve validation ownership
+
+The integration does not repeat or replace validation from its dependencies.
+The spread parser owns spread structure and EV validation, the nature resolver
+owns canonical nature names, and the Speed calculator owns Base Speed, IV,
+level, and modifier validation.
+
+When one of those modules rejects an input, its original error is allowed to
+propagate. A future user-interface layer can catch the error and decide how to
+display it.
+
+#### Return an explainable result
+
+The integration returns structured information instead of only returning a
+number. For example, a result can show that a Jolly nature produced a `1.1`
+modifier, the spread contained 252 Speed EVs, and the final raw Speed was 169.
+
+This makes the calculation easier to audit and gives future AMS explanations
+the evidence needed to justify a Speed recommendation.
+
+### Validation
+
+* Four focused nature-resolver tests pass
+* Three focused spread-Speed integration tests pass
+* All 41 repository tests pass
+* The production build completes successfully
+* Lint and whitespace checks pass
+* Pull requests #15 and #17 were reviewed and squash-merged
+* Issues #14 and #16 closed automatically
+
+### How This Helps the Anti-Meta Score
+
+The engine can now derive a traceable raw Speed benchmark from a common Smogon
+spread. This allows candidate sets to be compared against highly used
+metagame threats and helps identify the investment needed to reach a particular
+Speed tier.
+
+The result measures one part of matchup effectiveness. It does not represent a
+predicted win rate and does not yet account for items, abilities, weather,
+Tailwind, paralysis, stat stages, or Trick Room.
+
+### Next Milestone
+
+Compare a candidate's raw Speed benchmark against a metagame threat and report
+whether the candidate is faster, slower, or tied, along with the numerical
+difference.
+
 ## September 9, 2026 — Milestone 5: Validated Speed Stat Calculator
 
 ### Goal
